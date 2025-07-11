@@ -3,91 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Project 1 - 3D Viewer</title>
+    <style>
+        /* Add any additional styles specific to the project page */
+        body { margin: 0; }
+        canvas { display: block; }
+        .project-header { text-align: center; margin: 40px 0; }
+        .project-description { margin: 20px auto; max-width: 800px; font-size: 1.1em; line-height: 1.6; text-align: justify; }
+        .project-image { width: 100%; max-width: 600px; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+        .step-viewer-container { margin-top: 40px; display: flex; justify-content: center; }
+        .step-file-embed { width: 100%; height: 600px; }
+        footer { text-align: center; padding: 10px; background-color: #2c3e50; color: white; margin-top: 40px; }
+    </style>
 </head>
 <body>
-    <!-- Main Header -->
-    <header>
-        <h1>Welcome to My Mechanical Engineering Portfolio</h1>
-        <p>Explore my projects and designs</p>
+
+    <!-- Project Header -->
+    <header class="project-header">
+        <h1>Project 1: Amazing Engineering Design</h1>
+        <p>Interactive 3D Model of the Design</p>
     </header>
 
-    <!-- Main Content -->
-    <div class="project-container">
-        <!-- Project Cards (Placeholder Images and Text) -->
-        <div class="project-card" onclick="openProject('project1')">
-            <img src="placeholder.jpg" alt="Project 1">
-            <h2>Project 1</h2>
-            <p>Placeholder description for Project 1</p>
-        </div>
-        <div class="project-card" onclick="openProject('project2')">
-            <img src="placeholder.jpg" alt="Project 2">
-            <h2>Project 2</h2>
-            <p>Placeholder description for Project 2</p>
-        </div>
-        <div class="project-card" onclick="openProject('project3')">
-            <img src="placeholder.jpg" alt="Project 3">
-            <h2>Project 3</h2>
-            <p>Placeholder description for Project 3</p>
-        </div>
-        <div class="project-card" onclick="openProject('project4')">
-            <img src="placeholder.jpg" alt="Project 4">
-            <h2>Project 4</h2>
-            <p>Placeholder description for Project 4</p>
-        </div>
-        <div class="project-card" onclick="openProject('project5')">
-            <img src="placeholder.jpg" alt="Project 5">
-            <h2>Project 5</h2>
-            <p>Placeholder description for Project 5</p>
-        </div>
-        <div class="project-card" onclick="openProject('project6')">
-            <img src="placeholder.jpg" alt="Project 6">
-            <h2>Project 6</h2>
-            <p>Placeholder description for Project 6</p>
-        </div>
-        <div class="project-card" onclick="openProject('project7')">
-            <img src="placeholder.jpg" alt="Project 7">
-            <h2>Project 7</h2>
-            <p>Placeholder description for Project 7</p>
-        </div>
-        <div class="project-card" onclick="openProject('project8')">
-            <img src="placeholder.jpg" alt="Project 8">
-            <h2>Project 8</h2>
-            <p>Placeholder description for Project 8</p>
-        </div>
-        <div class="project-card" onclick="openProject('project9')">
-            <img src="placeholder.jpg" alt="Project 9">
-            <h2>Project 9</h2>
-            <p>Placeholder description for Project 9</p>
-        </div>
-        <div class="project-card" onclick="openProject('project10')">
-            <img src="placeholder.jpg" alt="Project 10">
-            <h2>Project 10</h2>
-            <p>Placeholder description for Project 10</p>
-        </div>
+    <div class="project-image-container">
+        <img src="placeholder.jpg" alt="Project 1 Image" class="project-image">
     </div>
 
-    <!-- Left and Right Navigation Arrows -->
-    <button class="arrow-btn arrow-left" id="prev">←</button>
-    <button class="arrow-btn arrow-right" id="next">→</button>
+    <!-- Project Description -->
+    <div class="project-description">
+        <h2>Project Overview</h2>
+        <p>This project is a cutting-edge engineering solution designed to solve complex problems in the manufacturing process. The design focuses on innovation, efficiency, and sustainability.</p>
+    </div>
+
+    <!-- STEP File Viewer -->
+    <div class="step-viewer-container">
+        <h3>Interactive 3D Model Viewer</h3>
+        <!-- ShareCAD Viewer Embed (Replace URL with your uploaded STEP file's URL) -->
+        <iframe class="step-file-embed" src="https://www.sharecad.org/cadframe/load?url=https://your-username.github.io/your-repository/stl/project1.stl" frameborder="0"></iframe>
+    </div>
+
+    <!-- Project Navigation Button (Optional) -->
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="index.html">
+            <button>Back to Portfolio</button>
+        </a>
+    </div>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Your Name - Mechanical Engineer</p>
     </footer>
-
-    <!-- Modal for Quick View -->
-    <div id="projectModal" class="modal">
-        <div class="modal-content">
-            <img id="modalImage" src="" alt="Project Image">
-            <h2 id="modalTitle"></h2>
-            <p id="modalDescription"></p>
-            <a id="modalLink" href="#">
-                <button>View Full Project</button>
-            </a>
-        </div>
-    </div>
 
     <script src="scripts.js"></script>
 </body>
