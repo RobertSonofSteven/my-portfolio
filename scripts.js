@@ -4,6 +4,7 @@ const projectCards = document.querySelectorAll('.project-card');
 
 // Initialize the index of the currently highlighted project
 let currentIndex = 0;
+let isMouseHovered = false; // To check if the mouse is hovering over a project
 
 // Function to highlight the current project card
 function highlightProject(index) {
@@ -15,30 +16,59 @@ function highlightProject(index) {
     });
 }
 
-// Navigate to the next project
+// Function to scroll to a specific project
+function scrollToProject(index) {
+    projectContainer.scrollTo(projectCards[index].offsetLeft, 0);
+}
+
+// Navigate to the next project (looping)
 function nextProject() {
     currentIndex = (currentIndex + 1) % projectCards.length;
     highlightProject(currentIndex);
-    projectContainer.scrollTo(projectCards[currentIndex].offsetLeft, 0);
+    scrollToProject(currentIndex);
 }
 
-// Navigate to the previous project
+// Navigate to the previous project (looping)
 function prevProject() {
     currentIndex = (currentIndex - 1 + projectCards.length) % projectCards.length;
     highlightProject(currentIndex);
-    projectContainer.scrollTo(projectCards[currentIndex].offsetLeft, 0);
+    scrollToProject(currentIndex);
 }
 
-// Add event listeners for the left and right arrows
-document.getElementById('prev').addEventListener('click', prevProject);
-document.getElementById('next').addEventListener('click', nextProject);
+// Add event listeners for the left and right arrows for scrolling
+document.getElementById('prev').addEventListener('click', () => {
+    projectContainer.scrollBy(-projectCards[0].offsetWidth * 2, 0); // Scroll by 2 projects left
+});
 
-// Enable keyboard navigation
+document.getElementById('next').addEventListener('click', () => {
+    projectContainer.scrollBy(projectCards[0].offsetWidth * 2, 0); // Scroll by 2 projects right
+});
+
+// Function to handle hover highlighting
+projectCards.forEach((card, index) => {
+    card.addEventListener('mouseenter', () => {
+        if (!isMouseHovered) {
+            isMouseHovered = true;
+            currentIndex = index;
+            highlightProject(currentIndex);
+        }
+    });
+
+    card.addEventListener('mouseleave', () => {
+        isMouseHovered = false;
+    });
+});
+
+// Enable keyboard navigation (using arrow keys to move through projects)
 document.addEventListener('keydown', (event) => {
     if (event.key === 'ArrowRight') {
-        nextProject();
+        if (!isMouseHovered) {
+            nextProject();
+        }
     } else if (event.key === 'ArrowLeft') {
-        prevProject();
+        if (!isMouseHovered) {
+            prevProject();
+        }
     }
 });
 
