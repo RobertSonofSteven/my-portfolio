@@ -77,17 +77,19 @@
         <p>&copy; 2025 Your Name - Mechanical Engineer</p>
     </footer>
 
-    <!-- Modal for Quick View -->
-    <div id="projectModal" class="modal">
-        <div class="modal-content">
-            <img id="modalImage" src="" alt="Project Image">
-            <h2 id="modalTitle"></h2>
-            <p id="modalDescription"></p>
-            <a id="modalLink" href="#">
-                <button>View Full Project</button>
-            </a>
-        </div>
+<!-- Modal for Quick View -->
+<div id="projectModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span> <!-- "X" button -->
+        <img id="modalImage" src="" alt="Project Image">
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        <a id="modalLink" href="#" target="_blank">
+            <button>View Full Project</button>
+        </a>
     </div>
+</div>
+
 
     <script src="scripts.js"></script>
 </body>
