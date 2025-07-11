@@ -5,61 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1 - 3D Viewer</title>
     <style>
-        body { margin: 0; }
-        canvas { display: block; }
-        .project-header {
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
             text-align: center;
-            margin: 40px 0;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        .project-description {
+            margin: 20px auto;
+            max-width: 800px;
+            font-size: 1.1em;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .step-viewer-container {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 40px;
+        }
+
+        canvas {
+            display: block;
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
 
-    <header class="project-header">
+    <!-- Project Header -->
+    <header>
         <h1>Project 1: Amazing Engineering Design</h1>
         <p>Interactive 3D Model of the Design</p>
     </header>
 
-    <div id="viewer"></div>
+    <!-- Project Description -->
+    <div class="project-description">
+        <h2>Project Overview</h2>
+        <p>This project is a cutting-edge engineering solution designed to solve complex problems in the manufacturing process. The design focuses on innovation, efficiency, and sustainability. This project integrates various mechanical and electrical components, which work together to enhance operational performance and reduce environmental impact. The project was developed using advanced CAD software, and the entire process—from concept to prototype—was carefully planned to meet the project’s high standards.</p>
+    </div>
+
+    <!-- STEP File Viewer -->
+    <div class="step-viewer-container">
+        <h3>Interactive 3D Model Viewer</h3>
+        <!-- Three.js Viewer will be rendered below -->
+        <canvas id="viewer"></canvas>
+    </div>
+
+    <!-- Back to Portfolio Button -->
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="index.html">
+            <button>Back to Portfolio</button>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Your Name - Mechanical Engineer</p>
+    </footer>
 
     <!-- Three.js Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/loaders/STLLoader.js"></script>
 
     <script>
-        // Set up the scene
-        var scene = new THREE.Scene();
-        var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        var renderer = new THREE.WebGLRenderer();
+        // Set up the scene, camera, and renderer
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('viewer') });
         renderer.setSize(window.innerWidth, window.innerHeight);
-        document.getElementById('viewer').appendChild(renderer.domElement);
+        document.body.appendChild(renderer.domElement);
 
-        // Add a basic light
-        var light = new THREE.AmbientLight(0x404040); // Ambient light
+        // Set up the lighting
+        const light = new THREE.AmbientLight(0x404040); // Ambient light
         scene.add(light);
 
-        // Add a directional light
-        var dirLight = new THREE.DirectionalLight(0xffffff, 1);
-        dirLight.position.set(5, 5, 5).normalize();
-        scene.add(dirLight);
+        const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+        directionalLight.position.set(5, 5, 5).normalize();
+        scene.add(directionalLight);
 
-        // Load STL model
-        var loader = new THREE.STLLoader();
+        // Load the STL model using STLLoader
+        const loader = new THREE.STLLoader();
         loader.load('https://robertsonofsteven.github.io/my-portfolio/stl/project1.stl', function (geometry) {
-            var material = new THREE.MeshLambertMaterial({ color: 0x0077ff });
-            var mesh = new THREE.Mesh(geometry, material);
+            const material = new THREE.MeshLambertMaterial({ color: 0x0077ff });
+            const mesh = new THREE.Mesh(geometry, material);
             scene.add(mesh);
 
             // Center the model
-            var bbox = new THREE.Box3().setFromObject(mesh);
-            var center = bbox.getCenter(new THREE.Vector3());
+            const bbox = new THREE.Box3().setFromObject(mesh);
+            const center = bbox.getCenter(new THREE.Vector3());
             mesh.position.sub(center);
         });
 
         // Set camera position
         camera.position.z = 5;
 
-        // Animate the scene
+        // Animation loop
         function animate() {
             requestAnimationFrame(animate);
 
@@ -75,18 +132,13 @@
         }
         animate();
 
-        // Handle window resizing
+        // Adjust the renderer size when the window is resized
         window.addEventListener('resize', function() {
             renderer.setSize(window.innerWidth, window.innerHeight);
             camera.aspect = window.innerWidth / window.innerHeight;
             camera.updateProjectionMatrix();
         });
     </script>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Your Name - Mechanical Engineer</p>
-    </footer>
 
 </body>
 </html>
