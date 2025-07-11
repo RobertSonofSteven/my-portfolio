@@ -23,6 +23,15 @@ const projectData = {
     // Add data for other projects (3–10)
 };
 
+// Close the modal when clicking anywhere outside the modal content
+window.onclick = function(event) {
+    const modal = document.getElementById("projectModal");
+    // If the user clicks on the background, close the modal
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+};
+
 // Open the modal with project details
 function openProject(projectId) {
     const modal = document.getElementById("projectModal");
@@ -31,7 +40,7 @@ function openProject(projectId) {
     const image = document.getElementById("modalImage");
     const link = document.getElementById("modalLink");
 
-    // Set project details based on the clicked card
+    // Set project details based on the clicked card (replace with actual data)
     const project = projectData[projectId];
 
     title.innerHTML = project.title;
@@ -42,12 +51,10 @@ function openProject(projectId) {
     modal.style.display = "block"; // Show the modal
 }
 
-// Close modal when clicking outside
-window.onclick = function(event) {
+// Close the modal when the "X" button is clicked
+function closeModal() {
     const modal = document.getElementById("projectModal");
-    if (event.target == modal) {
-        modal.style.display = "none"; // Close the modal
-    }
+    modal.style.display = "none"; // Close the modal
 }
 
 // Add event listeners for the left and right arrows for scrolling
