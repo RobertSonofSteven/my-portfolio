@@ -23,14 +23,14 @@ const projectData = {
     // Add data for other projects (3–10)
 };
 
-// Close the modal when clicking anywhere outside the modal content
-window.onclick = function(event) {
+// Close the modal when clicking anywhere outside the modal content (i.e., on the modal background)
+function closeModal(event) {
     const modal = document.getElementById("projectModal");
-    // If the user clicks on the background, close the modal
-    if (event.target == modal) {
-        modal.style.display = "none";
+    // Close the modal if the user clicked on the background (not inside modal content)
+    if (event.target == modal || event.target.classList.contains('close-btn')) {
+        modal.style.display = "none"; // Hide the modal
     }
-};
+}
 
 // Open the modal with project details
 function openProject(projectId) {
@@ -51,10 +51,13 @@ function openProject(projectId) {
     modal.style.display = "block"; // Show the modal
 }
 
-// Close the modal when the "X" button is clicked
-function closeModal() {
+// Close the modal manually by clicking "X" or clicking outside
+window.onclick = function(event) {
+    // If the modal background (not the content) is clicked, close the modal
     const modal = document.getElementById("projectModal");
-    modal.style.display = "none"; // Close the modal
+    if (event.target == modal) {
+        modal.style.display = "none"; // Close the modal
+    }
 }
 
 // Add event listeners for the left and right arrows for scrolling
