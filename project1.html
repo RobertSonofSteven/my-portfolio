@@ -102,7 +102,7 @@
 
         // Load the STL model using STLLoader
         const loader = new THREE.STLLoader();
-        loader.load('https://raw.githubusercontent.com/robertsonofsteven/my-portfolio/main/stl/project1.stl', function (geometry) {
+        loader.load('https://raw.githubusercontent.com/robertsonofsteven/my-portfolio/main/stl/project1.STL', function (geometry) {
             const material = new THREE.MeshLambertMaterial({ color: 0x0077ff });
             const mesh = new THREE.Mesh(geometry, material);
             scene.add(mesh);
