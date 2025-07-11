@@ -42,12 +42,6 @@ function openProject(projectId) {
     modal.style.display = "block"; // Show the modal
 }
 
-// Close the modal
-function closeModal() {
-    const modal = document.getElementById("projectModal");
-    modal.style.display = "none"; // Close the modal
-}
-
 // Close modal when clicking outside
 window.onclick = function(event) {
     const modal = document.getElementById("projectModal");
