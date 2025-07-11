@@ -86,3 +86,13 @@ footer {
     color: white;
     margin-top: 20px;
 }
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    max-height: 80vh;  /* Limits height */
+    overflow-y: auto;  /* Enables scrolling */
+}
