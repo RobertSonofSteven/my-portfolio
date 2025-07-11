@@ -45,8 +45,8 @@ header p {
     background-color: white;
     border: 2px solid #ccc;
     border-radius: 8px;
-    width: 400px; /* Increase width for bigger project tiles */
-    height: 300px; /* Set a fixed height for the project tiles */
+    width: 300px;  /* Fixed width for project cards */
+    height: 300px; /* Fixed height */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -165,4 +165,23 @@ button {
 
 button:hover {
     background-color: #2980b9;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 1024px) {
+    .project-card {
+        width: 250px; /* Adjust width on smaller screens */
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        width: 200px; /* Adjust width further for mobile */
+        height: 200px;
+    }
+
+    .project-container {
+        gap: 15px; /* Reduce gap for mobile view */
+    }
 }
