@@ -48,11 +48,11 @@ function closeModal() {
     modal.style.display = "none"; // Close the modal
 }
 
-// Close modal if user clicks outside of it
+// Close modal when clicking outside
 window.onclick = function(event) {
     const modal = document.getElementById("projectModal");
     if (event.target == modal) {
-        modal.style.display = "none";
+        modal.style.display = "none"; // Close the modal
     }
 }
 
