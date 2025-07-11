@@ -6,33 +6,54 @@ const projectCards = document.querySelectorAll('.project-card');
 let currentIndex = 0;
 let isMouseHovered = false; // To check if the mouse is hovering over a project
 
-// Function to highlight the current project card
-function highlightProject(index) {
-    projectCards.forEach((card, i) => {
-        card.classList.remove('highlighted');
-        if (i === index) {
-            card.classList.add('highlighted');
-        }
-    });
+// Project data (you can modify with real data or load dynamically)
+const projectData = {
+    project1: {
+        title: "Project 1",
+        description: "A short description of Project 1.",
+        image: "project1-thumbnail.jpg",  // Image shown in the modal
+        link: "project1.html"  // Link to full project page
+    },
+    project2: {
+        title: "Project 2",
+        description: "A short description of Project 2.",
+        image: "project2-thumbnail.jpg",
+        link: "project2.html"
+    },
+    // Add data for other projects (3–10)
+};
+
+// Open the modal with project details
+function openProject(projectId) {
+    const modal = document.getElementById("projectModal");
+    const title = document.getElementById("modalTitle");
+    const description = document.getElementById("modalDescription");
+    const image = document.getElementById("modalImage");
+    const link = document.getElementById("modalLink");
+
+    // Set project details based on the clicked card
+    const project = projectData[projectId];
+
+    title.innerHTML = project.title;
+    description.innerHTML = project.description;
+    image.src = project.image;
+    link.href = project.link;
+
+    modal.style.display = "block"; // Show the modal
 }
 
-// Function to scroll to a specific project
-function scrollToProject(index) {
-    projectContainer.scrollTo(projectCards[index].offsetLeft, 0);
+// Close the modal
+function closeModal() {
+    const modal = document.getElementById("projectModal");
+    modal.style.display = "none"; // Close the modal
 }
 
-// Navigate to the next project (looping)
-function nextProject() {
-    currentIndex = (currentIndex + 1) % projectCards.length;
-    highlightProject(currentIndex);
-    scrollToProject(currentIndex);
-}
-
-// Navigate to the previous project (looping)
-function prevProject() {
-    currentIndex = (currentIndex - 1 + projectCards.length) % projectCards.length;
-    highlightProject(currentIndex);
-    scrollToProject(currentIndex);
+// Close modal if user clicks outside of it
+window.onclick = function(event) {
+    const modal = document.getElementById("projectModal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }
 
 // Add event listeners for the left and right arrows for scrolling
@@ -57,19 +78,12 @@ projectCards.forEach((card, index) => {
     card.addEventListener('mouseleave', () => {
         isMouseHovered = false;
     });
-});
 
-// Enable keyboard navigation (using arrow keys to move through projects)
-document.addEventListener('keydown', (event) => {
-    if (event.key === 'ArrowRight') {
-        if (!isMouseHovered) {
-            nextProject();
-        }
-    } else if (event.key === 'ArrowLeft') {
-        if (!isMouseHovered) {
-            prevProject();
-        }
-    }
+    // When clicking on the card, open the quick view (modal)
+    card.addEventListener('click', () => {
+        const projectId = `project${index + 1}`;
+        openProject(projectId);
+    });
 });
 
 // Initially highlight the first project
