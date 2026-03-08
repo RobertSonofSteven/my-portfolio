@@ -1,97 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robert Stevenson | Engineering Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Main Header -->
-    <header>
-        <h1>Welcome to My Mechanical Engineering Portfolio</h1>
-        <p>Explore my projects and designs</p>
-    </header>
-
-    <!-- Main Content -->
-    <div class="project-container">
-        <!-- Project Cards (Placeholder Images and Text) -->
-        <div class="project-card" onclick="openProject('project1')">
-            <img src="placeholder.jpg" alt="Project 1">
-            <h2>Project 1</h2>
-            <p>Placeholder description for Project 1</p>
-        </div>
-        <div class="project-card" onclick="openProject('project2')">
-            <img src="placeholder.jpg" alt="Project 2">
-            <h2>Project 2</h2>
-            <p>Placeholder description for Project 2</p>
-        </div>
-        <div class="project-card" onclick="openProject('project3')">
-            <img src="placeholder.jpg" alt="Project 3">
-            <h2>Project 3</h2>
-            <p>Placeholder description for Project 3</p>
-        </div>
-        <div class="project-card" onclick="openProject('project4')">
-            <img src="placeholder.jpg" alt="Project 4">
-            <h2>Project 4</h2>
-            <p>Placeholder description for Project 4</p>
-        </div>
-        <div class="project-card" onclick="openProject('project5')">
-            <img src="placeholder.jpg" alt="Project 5">
-            <h2>Project 5</h2>
-            <p>Placeholder description for Project 5</p>
-        </div>
-        <div class="project-card" onclick="openProject('project6')">
-            <img src="placeholder.jpg" alt="Project 6">
-            <h2>Project 6</h2>
-            <p>Placeholder description for Project 6</p>
-        </div>
-        <div class="project-card" onclick="openProject('project7')">
-            <img src="placeholder.jpg" alt="Project 7">
-            <h2>Project 7</h2>
-            <p>Placeholder description for Project 7</p>
-        </div>
-        <div class="project-card" onclick="openProject('project8')">
-            <img src="placeholder.jpg" alt="Project 8">
-            <h2>Project 8</h2>
-            <p>Placeholder description for Project 8</p>
-        </div>
-        <div class="project-card" onclick="openProject('project9')">
-            <img src="placeholder.jpg" alt="Project 9">
-            <h2>Project 9</h2>
-            <p>Placeholder description for Project 9</p>
-        </div>
-        <div class="project-card" onclick="openProject('project10')">
-            <img src="placeholder.jpg" alt="Project 10">
-            <h2>Project 10</h2>
-            <p>Placeholder description for Project 10</p>
-        </div>
+  <header>
+    <div class="container nav">
+      <div class="nav-left">
+        <a href="#top" class="brand">Robert Stevenson</a>
+        <nav class="nav-links">
+          <a href="#top" class="active">Home</a>
+          <a href="#featured">Featured</a>
+          <a href="#work">Work</a>
+          <a href="#personal">Personal</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="nav-right">
+        <span>Engineering Portfolio</span>
+        <span class="profile-pill">RS</span>
+      </div>
     </div>
+  </header>
 
-    <!-- Left and Right Navigation Arrows -->
-    <button class="arrow-btn arrow-left" id="prev">←</button>
-    <button class="arrow-btn arrow-right" id="next">→</button>
+  <main id="top">
+    <section class="spotlight-hero container" id="featured">
+      <div class="spotlight-panel" id="spotlightPanel"></div>
+      <div class="spotlight-controls">
+        <p class="spotlight-note">Top spotlight rotates through 3 selected projects every 30 seconds.</p>
+        <div class="spotlight-indicators" id="spotlightIndicators"></div>
+      </div>
+    </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Your Name - Mechanical Engineer</p>
-    </footer>
+    <section class="container rows-area" id="rowsArea"></section>
 
-<!-- Modal for Quick View -->
-<div id="projectModal" class="modal" onclick="closeModal(event)">
-    <div class="modal-content">
-        <span class="close-btn" onclick="closeModal(event)">&times;</span> <!-- "X" button -->
-        <img id="modalImage" src="" alt="Project Image">
-        <h2 id="modalTitle"></h2>
-        <p id="modalDescription"></p>
-        <a id="modalLink" href="#">
-            <button>View Full Project</button>
-        </a>
+    <section class="container contact-section" id="contact">
+      <div class="contact-card">
+        <div>
+          <h3>Contact</h3>
+          <p>
+            Add your real information here so recruiters, hiring managers, and collaborators can reach you directly.
+            The external buttons are ready for places like LinkedIn, GitHub, your resume, or any project page you want to highlight.
+          </p>
+          <div class="contact-links">
+            <a class="contact-link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="contact-link" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="contact-link" href="#">Resume</a>
+            <a class="contact-link" href="mailto:you@example.com">Email Me</a>
+          </div>
+        </div>
+        <div class="contact-list">
+          <div class="contact-item">
+            <span class="contact-label">Name</span>
+            <span class="contact-value">Robert Stevenson</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Email</span>
+            <a class="contact-value" href="mailto:you@example.com">you@example.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">LinkedIn</span>
+            <a class="contact-value" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">linkedin.com/in/your-profile</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Greater Chicago Area</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div>© 2026 Robert Stevenson. Built for iteration.</div>
+  </footer>
+
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-media" id="modalMedia"></div>
+      <div class="modal-content">
+        <div class="modal-top">
+          <div class="modal-title-wrap">
+            <div class="tag" id="modalCategory">Category</div>
+            <h3 id="modalTitle">Project Title</h3>
+            <p id="modalDescription">Project description goes here.</p>
+            <div class="inline-meta" id="modalMeta"></div>
+          </div>
+          <button class="close-button" id="closeModal" aria-label="Close modal">✕</button>
+        </div>
+
+        <div class="modal-columns">
+          <div>
+            <h4>Overview</h4>
+            <p id="modalOverview"></p>
+          </div>
+          <div>
+            <h4>Highlights</h4>
+            <ul class="modal-list" id="modalHighlights"></ul>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-
-
-
-    <script src="scripts.js"></script>
+  </div>
 </body>
 </html>
