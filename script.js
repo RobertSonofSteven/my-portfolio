@@ -1,200 +1,33 @@
-const projectCatalog = {
-  vaporlogic: {
-    title: "VaporLogicAI",
-    category: "Work / Automation",
-    tone: "work",
-    summary: "Zone-based moisture control concept for corrugated board quality and warpage correction.",
-    description: "A control-focused concept for improving corrugated board flatness with smarter zone-based spray control.",
-    overview: "This project explores a water spraying system for corrugated paper manufacturing using atomizing nozzles, air and water control, and future feedback-driven tuning. It is a strong example of mechanical, controls, and product-thinking overlap.",
-    highlights: ["Multi-zone nozzle strategy", "Air and water mixture control", "Designed around practical manufacturability", "Expandable toward PID plus AI feedback"],
-    meta: ["Controls", "Mechanical Design", "Concept Development"],
-    pageUrl: "#",
-    heroLabel: "Featured Project"
-  },
-  macropad: {
-    title: "Macro Pad PCB",
-    category: "Personal / Electronics",
-    tone: "personal",
-    summary: "A custom macro pad concept with knobs, hall-effect inputs, and a purpose-built PCB.",
-    description: "A hardware project combining industrial design, input ergonomics, and PCB planning.",
-    overview: "This project is intended to showcase a mix of enclosure design, electronics integration, and user interface thinking. It can later include schematics, PCB renders, firmware notes, and prototype photos.",
-    highlights: ["Custom PCB direction", "Rotary control inputs", "Potential hall-effect switch integration", "Good project for CAD and electronics crossover"],
-    meta: ["PCB", "KiCad", "Prototype"],
-    pageUrl: "#",
-    heroLabel: "Featured Project"
-  },
-  encoder: {
-    title: "Magnetic Encoder Redesign",
-    category: "Work / Product Design",
-    tone: "work",
-    summary: "Redesign work involving magnetic encoder packaging, manufacturability, and system integration.",
-    description: "An engineering-focused redesign project that can highlight practical constraints and real-world iteration.",
-    overview: "This entry is a strong candidate for a case-study page showing the design process, packaging constraints, cost considerations, electrical coordination, and implementation outcomes.",
-    highlights: ["Sensor integration", "Packaging constraints", "Cross-functional work", "Real product impact"],
-    meta: ["Industrial", "Hall Sensor", "Design Iteration"],
-    pageUrl: "#",
-    heroLabel: "Featured Project"
-  },
-  arcade: {
-    title: "CRT Arcade Cabinet",
-    category: "Personal / Build",
-    tone: "personal",
-    summary: "A retro gaming build combining Raspberry Pi setup, controls, and CRT presentation.",
-    description: "A hands-on project that blends electronics, fabrication, interface setup, and nostalgic product design.",
-    overview: "This project has great visual appeal and gives your portfolio personality. It can show troubleshooting, mechanical mounting, software setup, user-experience thinking, and finish details.",
-    highlights: ["Raspberry Pi integration", "CRT display tuning", "Control wiring", "High visual interest"],
-    meta: ["Build", "Raspberry Pi", "User Experience"],
-    pageUrl: "#",
-    heroLabel: "Personal Highlight"
-  },
-  portfolio: {
-    title: "Portfolio Website",
-    category: "Personal / Web",
-    tone: "personal",
-    summary: "The site itself can become a project, documenting design choices and implementation.",
-    description: "A meta-project that demonstrates visual communication and technical presentation.",
-    overview: "Even though this is not a traditional mechanical project, it is still worth including as a brief case study because it shows how you communicate engineering work, structure information, and present yourself professionally.",
-    highlights: ["Clear project storytelling", "Custom visual system", "Professional branding", "GitHub-hosted deployment"],
-    meta: ["Frontend", "Branding", "Documentation"],
-    pageUrl: "#",
-    heroLabel: "Personal Highlight"
-  },
-  velocity: {
-    title: "Barbell Velocity Tracker",
-    category: "Personal / Fitness Tech",
-    tone: "fitness",
-    summary: "A concept for measuring lifting speed and rep performance using sensors and data.",
-    description: "A technical concept with room for hardware, mechanics, and data visualization.",
-    overview: "This project could become a very strong engineering portfolio piece because it crosses mechanical setup, sensor mounting, data acquisition, and user-focused product thinking.",
-    highlights: ["Sensor-driven concept", "Fitness hardware angle", "Data display potential", "Prototype-friendly"],
-    meta: ["Hardware", "Sensors", "Data"],
-    pageUrl: "#",
-    heroLabel: "Fitness Highlight"
-  },
-  repcounter: {
-    title: "Smart Rep Counter",
-    category: "Personal / Embedded",
-    tone: "fitness",
-    summary: "A workout-oriented embedded device concept for tracking exercise repetitions accurately.",
-    description: "A practical user-centered product idea that can show design-for-use thinking.",
-    overview: "This is the kind of project that can be documented from concept sketches through prototype testing. It has strong potential as a portfolio piece because the value proposition is easy to understand immediately.",
-    highlights: ["Embedded product concept", "Clear user problem", "Prototype opportunities", "Good for quick visuals"],
-    meta: ["Embedded", "UX", "Prototype"],
-    pageUrl: "#",
-    heroLabel: "Fitness Highlight"
-  },
-  stewart: {
-    title: "Stewart Platform Ping Pong Concept",
-    category: "Personal / Mechanical Systems",
-    tone: "personal",
-    summary: "A dynamic motion-control concept exploring repeated bounce control and actuation.",
-    description: "A visually interesting concept that can showcase mechanism thinking and system design.",
-    overview: "This project is useful because it communicates engineering curiosity. It can highlight mechanism layout, control ideas, and the challenge of balancing responsiveness, motion range, and stability.",
-    highlights: ["Mechanism design", "Motion control concept", "Strong visual storytelling", "Cross-disciplinary potential"],
-    meta: ["Mechanics", "Motion", "Control"],
-    pageUrl: "#",
-    heroLabel: "Personal Highlight"
-  },
-  printer: {
-    title: "3D Printer Upgrade / Rebuild",
-    category: "Personal / Fabrication",
-    tone: "fabrication",
-    summary: "A rebuild-oriented project using older hardware as a platform for refinement and learning.",
-    description: "A practical engineering build that demonstrates troubleshooting and iterative improvement.",
-    overview: "This can be framed as a system optimization project rather than just a hobby build. Documenting decisions, changes, and improvements would make it portfolio-worthy.",
-    highlights: ["Hands-on integration", "Mechanical tuning", "Hardware reuse", "Practical iteration"],
-    meta: ["Fabrication", "Optimization", "Build"],
-    pageUrl: "#",
-    heroLabel: "3D Printing Highlight"
-  },
-  lx470: {
-    title: "LX470 Cooling System Troubleshooting",
-    category: "Car / Diagnosis",
-    tone: "car",
-    summary: "A vehicle troubleshooting case built around cooling system behavior, airflow, and diagnosis.",
-    description: "A hands-on automotive project that can show diagnostic logic and practical mechanical reasoning.",
-    overview: "This can become a clean portfolio story about identifying symptoms, investigating causes, and narrowing down mechanical issues in a real vehicle system. It is useful because it shows methodical engineering thinking applied outside formal product development.",
-    highlights: ["Real-world diagnosis", "Mechanical troubleshooting", "System-level thinking", "Strong problem-solving angle"],
-    meta: ["Automotive", "Diagnosis", "Hands-On"],
-    pageUrl: "#",
-    heroLabel: "Car Highlight"
-  },
-  magsafe: {
-    title: "Panel-Mount MagSafe Charger Concept",
-    category: "Car / Electronics",
-    tone: "car",
-    summary: "A vehicle-mounted charging concept combining packaging, power conversion, and clean integration.",
-    description: "A compact automotive electronics concept focused on function, fit, and finish.",
-    overview: "This is a good portfolio piece because it feels like a real consumer product. It can show packaging constraints, electrical considerations, mounting design, and a thoughtful user experience inside a vehicle environment.",
-    highlights: ["Power and packaging integration", "Consumer product feel", "Vehicle installation context", "Strong CAD opportunity"],
-    meta: ["Automotive", "Electronics", "Packaging"],
-    pageUrl: "#",
-    heroLabel: "Car Highlight"
-  },
-  display: {
-    title: "Rugged Display Redesign",
-    category: "Work / Product Design",
-    tone: "work",
-    summary: "A work-style placeholder for a product redesign focused on packaging, usability, and implementation.",
-    description: "A professional-looking case-study slot for a future work project writeup.",
-    overview: "This placeholder keeps the work row full while giving you a spot for another strong product design case study. Later it can be replaced with a real project from your job or consulting work.",
-    highlights: ["Product redesign structure", "Manufacturing awareness", "Clean placeholder for future case study", "Fits professional portfolio tone"],
-    meta: ["Work Sample", "Future Case Study", "Product Design"],
-    pageUrl: "#",
-    heroLabel: "Work Highlight"
-  },
-  enclosure: {
-    title: "3D Printed Electronics Enclosure",
-    category: "3D Printing / Prototype",
-    tone: "fabrication",
-    summary: "A category-fit placeholder for enclosure design, prototype iteration, and print-for-fit work.",
-    description: "A flexible fabrication project slot for a future printed enclosure case study.",
-    overview: "This is a useful placeholder because it fits naturally with your printer, electronics, and product design interests. It can later become a real project with design iterations, print settings, and fit testing photos.",
-    highlights: ["Prototype enclosure workflow", "Print-for-fit testing", "Product design crossover", "Strong visual documentation potential"],
-    meta: ["3D Printing", "Enclosure", "Prototype"],
-    pageUrl: "#",
-    heroLabel: "3D Printing Highlight"
-  }
-};
-
-const spotlightProjects = ["vaporlogic", "macropad", "encoder"];
-
-const rows = [
+const CATEGORY_CONFIG = [
   {
-    id: "featured-row",
+    id: "featured",
     title: "Featured",
-    description: "A curated first row with the projects you most want people to notice first.",
-    items: ["vaporlogic", "macropad", "encoder", "arcade", "portfolio"]
+    description: "A curated first row with the projects you most want people to notice first."
   },
   {
     id: "work",
     title: "Work",
-    description: "Professional projects, product redesigns, automation ideas, and engineering work samples.",
-    items: ["vaporlogic", "encoder", "display"]
+    description: "Professional projects, product redesigns, automation ideas, and engineering work samples."
   },
   {
     id: "personal",
     title: "Personal",
-    description: "Projects that show curiosity, initiative, build skill, and cross-disciplinary thinking.",
-    items: ["arcade", "macropad", "stewart", "portfolio"]
+    description: "Projects that show curiosity, initiative, build skill, and cross-disciplinary thinking."
   },
   {
     id: "fitness",
     title: "Fitness Tech",
-    description: "Sensors, devices, and concepts built around lifting, training, and performance tracking.",
-    items: ["velocity", "repcounter"]
+    description: "Sensors, devices, and concepts built around lifting, training, and performance tracking."
   },
   {
     id: "car",
     title: "Car",
-    description: "Automotive projects, troubleshooting, and vehicle-related design or integration ideas.",
-    items: ["lx470", "magsafe"]
+    description: "Automotive projects, troubleshooting, and vehicle-related design or integration ideas."
   },
   {
-    id: "fabrication",
+    id: "3d-printing",
     title: "3D Printing",
-    description: "Fabrication-heavy projects, printer tuning, prototype development, and printed components.",
-    items: ["printer", "enclosure", "macropad"]
+    description: "Fabrication-heavy projects, printer tuning, prototype development, and printed components."
   }
 ];
 
@@ -210,7 +43,9 @@ let modalOverview;
 let modalHighlights;
 let modalMeta;
 let modalMedia;
+let modalProjectLink;
 
+let spotlightProjects = [];
 let spotlightIndex = 0;
 let spotlightTimer = null;
 
@@ -244,32 +79,72 @@ function getToneBase(tone) {
   }
 }
 
+function getTileBackground(imageUrl) {
+  return `
+    linear-gradient(180deg, rgba(0,0,0,0.05), rgba(0,0,0,0.18)),
+    url("${imageUrl}") center/cover no-repeat
+  `;
+}
+
+function getHeroVisualBackground(imageUrl) {
+  return `
+    linear-gradient(180deg, rgba(0,0,0,0.08), rgba(0,0,0,0.22)),
+    url("${imageUrl}") center/cover no-repeat
+  `;
+}
+
+function ensureModalProjectLink() {
+  const wrap = document.querySelector(".modal-title-wrap");
+  let actions = document.getElementById("modalActions");
+
+  if (!actions) {
+    actions = document.createElement("div");
+    actions.className = "spotlight-actions";
+    actions.id = "modalActions";
+    actions.innerHTML = `<a class="button primary" id="modalProjectLink" href="#">View Project Page</a>`;
+    wrap.appendChild(actions);
+  }
+
+  modalProjectLink = document.getElementById("modalProjectLink");
+}
+
+function sortProjects(a, b) {
+  if ((a.sortOrder ?? 999) !== (b.sortOrder ?? 999)) {
+    return (a.sortOrder ?? 999) - (b.sortOrder ?? 999);
+  }
+  return a.title.localeCompare(b.title);
+}
+
 function openModal(project) {
   modalTitle.textContent = project.title;
-  modalCategory.textContent = project.category;
+  modalCategory.textContent = project.categoryLabel || "Project";
   modalDescription.textContent = project.description;
   modalOverview.textContent = project.overview;
 
   modalHighlights.innerHTML = "";
-  project.highlights.forEach((item) => {
+  (project.highlights?.length ? project.highlights : project.keywords.slice(0, 4)).forEach((item) => {
     const li = document.createElement("li");
     li.textContent = item;
     modalHighlights.appendChild(li);
   });
 
   modalMeta.innerHTML = "";
-  project.meta.forEach((item) => {
+  (project.meta || []).forEach((item) => {
     const chip = document.createElement("span");
     chip.className = "meta-chip";
     chip.textContent = item;
     modalMeta.appendChild(chip);
   });
 
+  if (modalProjectLink) {
+    modalProjectLink.href = project.pageUrl;
+  }
+
   modalMedia.style.background = `
     linear-gradient(90deg, rgba(0,0,0,0.18), rgba(0,0,0,0.3)),
     radial-gradient(circle at 18% 18%, ${getToneGlow(project.tone)}, transparent 22%),
     radial-gradient(circle at 82% 72%, rgba(255,255,255,0.07), transparent 20%),
-    linear-gradient(145deg, #2b2b2b 0%, #151515 50%, #0b0b0b 100%)
+    url("${project.heroImage}") center/cover no-repeat
   `;
 
   modalBackdrop.classList.add("active");
@@ -283,14 +158,11 @@ function hideModal() {
   document.body.style.overflow = "";
 }
 
-function createSpotlight() {
+function buildSpotlight(projects) {
   spotlightPanel.innerHTML = "";
   spotlightIndicators.innerHTML = "";
 
-  spotlightProjects.forEach((key, index) => {
-    const project = projectCatalog[key];
-    if (!project) return;
-
+  projects.forEach((project, index) => {
     const slide = document.createElement("article");
     slide.className = `spotlight-slide${index === 0 ? " active" : ""}`;
     slide.dataset.index = String(index);
@@ -298,7 +170,7 @@ function createSpotlight() {
     slide.style.setProperty("--spotlight-base", getToneBase(project.tone));
     slide.innerHTML = `
       <div class="spotlight-copy">
-        <span class="eyebrow">${project.heroLabel}</span>
+        <span class="eyebrow">${project.heroLabel || "Featured Project"}</span>
         <h1>${project.title}</h1>
         <p>${project.description}</p>
         <div class="spotlight-actions">
@@ -306,11 +178,16 @@ function createSpotlight() {
           <button class="button secondary" type="button">Quick View</button>
         </div>
         <div class="spotlight-meta">
-          ${project.meta.map((item) => `<span>${item}</span>`).join("")}
+          ${(project.meta || []).map((item) => `<span>${item}</span>`).join("")}
         </div>
       </div>
       <div class="spotlight-visual" aria-hidden="true"></div>
     `;
+
+    const visual = slide.querySelector(".spotlight-visual");
+    if (project.heroImage) {
+      visual.style.background = getHeroVisualBackground(project.heroImage);
+    }
 
     const quickViewButton = slide.querySelector(".button.secondary");
     quickViewButton.addEventListener("click", () => openModal(project));
@@ -379,6 +256,11 @@ function createCard(project) {
     </div>
   `;
 
+  const visual = card.querySelector(".project-visual");
+  if (project.thumbnail) {
+    visual.style.background = getTileBackground(project.thumbnail);
+  }
+
   const open = () => openModal(project);
   card.addEventListener("click", open);
   card.addEventListener("keydown", (event) => {
@@ -391,21 +273,23 @@ function createCard(project) {
   return card;
 }
 
-function createRow(row) {
+function createRow(rowConfig, items) {
+  if (!items.length) return;
+
   const section = document.createElement("section");
   section.className = "row-section";
-  section.id = row.id;
+  section.id = rowConfig.id;
 
   const header = document.createElement("div");
   header.className = "row-header";
   header.innerHTML = `
     <div class="row-header-left">
-      <h2>${row.title}</h2>
-      <p>${row.description}</p>
+      <h2>${rowConfig.title}</h2>
+      <p>${rowConfig.description}</p>
     </div>
     <div class="row-controls">
-      <button class="row-control" type="button" aria-label="Scroll ${row.title} left">‹</button>
-      <button class="row-control" type="button" aria-label="Scroll ${row.title} right">›</button>
+      <button class="row-control" type="button" aria-label="Scroll ${rowConfig.title} left">‹</button>
+      <button class="row-control" type="button" aria-label="Scroll ${rowConfig.title} right">›</button>
     </div>
   `;
 
@@ -415,11 +299,8 @@ function createRow(row) {
   const track = document.createElement("div");
   track.className = "project-row";
 
-  row.items.forEach((key) => {
-    const project = projectCatalog[key];
-    if (project) {
-      track.appendChild(createCard(project));
-    }
+  items.forEach((project) => {
+    track.appendChild(createCard(project));
   });
 
   shell.appendChild(track);
@@ -439,12 +320,22 @@ function createRow(row) {
   });
 }
 
-function renderRows() {
+function renderRows(projects) {
   rowsArea.innerHTML = "";
-  rows.forEach(createRow);
+
+  CATEGORY_CONFIG.forEach((rowConfig) => {
+    const items = projects
+      .filter((project) => {
+        if (rowConfig.id === "featured") return project.featured || project.categories.includes("featured");
+        return project.categories.includes(rowConfig.id);
+      })
+      .sort(sortProjects);
+
+    createRow(rowConfig, items);
+  });
 }
 
-function init() {
+async function init() {
   rowsArea = document.getElementById("rowsArea");
   spotlightPanel = document.getElementById("spotlightPanel");
   spotlightIndicators = document.getElementById("spotlightIndicators");
@@ -457,6 +348,8 @@ function init() {
   modalHighlights = document.getElementById("modalHighlights");
   modalMeta = document.getElementById("modalMeta");
   modalMedia = document.getElementById("modalMedia");
+
+  ensureModalProjectLink();
 
   closeModal.addEventListener("click", hideModal);
 
@@ -472,10 +365,36 @@ function init() {
     }
   });
 
-  createSpotlight();
-  renderRows();
-  showSpotlight(0);
-  startSpotlightTimer();
+  try {
+    const response = await fetch("/data/projects.generated.json", { cache: "no-store" });
+    if (!response.ok) throw new Error("Could not load generated project data.");
+    const projects = (await response.json()).sort(sortProjects);
+
+    spotlightProjects = projects
+      .filter((project) => project.spotlight)
+      .slice(0, 3);
+
+    if (!spotlightProjects.length) {
+      spotlightProjects = projects
+        .filter((project) => project.featured)
+        .slice(0, 3);
+    }
+
+    buildSpotlight(spotlightProjects);
+    renderRows(projects);
+    showSpotlight(0);
+    startSpotlightTimer();
+  } catch (error) {
+    console.error(error);
+    rowsArea.innerHTML = `
+      <section class="row-section">
+        <div class="row-header-left">
+          <h2>Project data failed to load</h2>
+          <p>Check that /data/projects.generated.json exists in the deployed output.</p>
+        </div>
+      </section>
+    `;
+  }
 }
 
 document.addEventListener("DOMContentLoaded", init);
