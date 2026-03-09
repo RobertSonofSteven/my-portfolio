@@ -23,6 +23,8 @@ let modalHighlights;
 let modalMeta;
 let modalMedia;
 let modalProjectLink;
+let cadArchiveSection;
+let cadArchiveCollage;
 
 let spotlightProjects = [];
 let spotlightIndex = 0;
@@ -313,6 +315,37 @@ function renderRows(projects) {
   });
 }
 
+async function renderCadArchivePreview() {
+  cadArchiveSection = document.getElementById("cadArchiveSection");
+  cadArchiveCollage = document.getElementById("cadArchiveCollage");
+
+  if (!cadArchiveSection || !cadArchiveCollage) return;
+
+  try {
+    const response = await fetch("/data/additional-cad-work.generated.json", { cache: "no-store" });
+    if (!response.ok) throw new Error("Could not load CAD archive data.");
+
+    const images = await response.json();
+
+    if (!images.length) {
+      cadArchiveSection.remove();
+      return;
+    }
+
+    cadArchiveCollage.innerHTML = "";
+
+    images.slice(0, 18).forEach((item, index) => {
+      const cell = document.createElement("div");
+      cell.className = "cad-archive-thumb";
+      cell.innerHTML = `<img src="${item.src}" alt="Additional CAD Work ${index + 1}" loading="lazy" />`;
+      cadArchiveCollage.appendChild(cell);
+    });
+  } catch (error) {
+    console.error(error);
+    cadArchiveSection?.remove();
+  }
+}
+
 async function init() {
   rowsArea = document.getElementById("rowsArea");
   spotlightPanel = document.getElementById("spotlightPanel");
@@ -349,7 +382,6 @@ async function init() {
     const projects = (await response.json()).sort(sortProjects);
 
     spotlightProjects = projects.filter((project) => project.spotlight).slice(0, 3);
-
     if (!spotlightProjects.length) {
       spotlightProjects = projects.filter((project) => project.featured).slice(0, 3);
     }
@@ -358,6 +390,7 @@ async function init() {
     renderRows(projects);
     showSpotlight(0);
     startSpotlightTimer();
+    await renderCadArchivePreview();
   } catch (error) {
     console.error(error);
     rowsArea.innerHTML = `

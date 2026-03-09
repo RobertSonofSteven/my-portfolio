@@ -12,13 +12,8 @@
   --radius: 18px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
@@ -30,14 +25,8 @@ body {
   min-height: 100vh;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-button {
-  font: inherit;
-}
+a { color: inherit; text-decoration: none; }
+button { font: inherit; }
 
 .container {
   width: min(calc(100% - 56px), var(--max-width));
@@ -85,9 +74,7 @@ header {
 }
 
 .nav-links a:hover,
-.nav-links a.active {
-  color: var(--text);
-}
+.nav-links a.active { color: var(--text); }
 
 .nav-right {
   display: flex;
@@ -108,13 +95,9 @@ header {
   font-weight: 800;
 }
 
-main {
-  padding-bottom: 38px;
-}
+main { padding-bottom: 38px; }
 
-.spotlight-hero {
-  padding: 36px 0 14px;
-}
+.spotlight-hero { padding: 36px 0 14px; }
 
 .spotlight-panel {
   position: relative;
@@ -255,10 +238,7 @@ main {
   font-size: 0.88rem;
 }
 
-.spotlight-visual {
-  min-height: 100%;
-}
-
+.spotlight-visual { min-height: 100%; }
 .spotlight-visual::before,
 .spotlight-visual::after {
   display: none !important;
@@ -291,22 +271,12 @@ main {
   padding: 0;
 }
 
-.spotlight-dot.active {
-  background: white;
-}
+.spotlight-dot.active { background: white; }
+.spotlight-note { color: var(--muted); margin: 0; }
 
-.spotlight-note {
-  color: var(--muted);
-  margin: 0;
-}
+.rows-area { padding-top: 8px; }
 
-.rows-area {
-  padding-top: 8px;
-}
-
-.row-section {
-  margin: 0 0 36px;
-}
+.row-section { margin: 0 0 36px; }
 
 .row-header {
   display: flex;
@@ -342,9 +312,7 @@ main {
   transform: translateY(-1px);
 }
 
-.row-shell {
-  position: relative;
-}
+.row-shell { position: relative; }
 
 .project-row {
   display: flex;
@@ -357,9 +325,7 @@ main {
   scrollbar-width: none;
 }
 
-.project-row::-webkit-scrollbar {
-  display: none;
-}
+.project-row::-webkit-scrollbar { display: none; }
 
 .project-card {
   position: relative;
@@ -397,9 +363,7 @@ main {
 }
 
 .project-card:hover .project-visual,
-.project-card:focus-visible .project-visual {
-  transform: scale(1.04);
-}
+.project-card:focus-visible .project-visual { transform: scale(1.04); }
 
 .project-card[data-tone="work"] .project-visual {
   background:
@@ -499,10 +463,7 @@ main {
   line-height: 1.75;
 }
 
-.contact-list {
-  display: grid;
-  gap: 12px;
-}
+.contact-list { display: grid; gap: 12px; }
 
 .contact-item {
   display: flex;
@@ -521,10 +482,7 @@ main {
   color: #d8d8d8;
 }
 
-.contact-value {
-  color: white;
-  word-break: break-word;
-}
+.contact-value { color: white; word-break: break-word; }
 
 .contact-links {
   display: flex;
@@ -551,6 +509,80 @@ main {
   transform: translateY(-1px);
 }
 
+.cad-archive-section {
+  margin: 18px 0 10px;
+}
+
+.cad-archive-link {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 28px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background:
+    radial-gradient(circle at top right, rgba(30, 111, 255, 0.14), transparent 24%),
+    linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+  box-shadow: var(--shadow);
+  padding: 28px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.cad-archive-link:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255,255,255,0.14);
+}
+
+.cad-archive-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.cad-archive-header h2 {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.cad-archive-collage {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 12px;
+  max-height: 360px;
+  overflow: hidden;
+}
+
+.cad-archive-thumb {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: #101010;
+  aspect-ratio: 4 / 3;
+}
+
+.cad-archive-thumb img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.24s ease;
+}
+
+.cad-archive-link:hover .cad-archive-thumb img {
+  transform: scale(1.03);
+}
+
+.cad-archive-bottom-fade {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 130px;
+  background: linear-gradient(180deg, rgba(10,10,10,0) 0%, rgba(10,10,10,0.86) 78%, rgba(10,10,10,1) 100%);
+}
+
 footer {
   padding: 26px 0 70px;
   color: #9f9f9f;
@@ -569,9 +601,7 @@ footer {
   z-index: 100;
 }
 
-.modal-backdrop.active {
-  display: flex;
-}
+.modal-backdrop.active { display: flex; }
 
 .modal {
   width: min(980px, 100%);
@@ -592,9 +622,7 @@ footer {
     linear-gradient(145deg, #24344d 0%, #151d29 50%, #0b0b0b 100%);
 }
 
-.modal-content {
-  padding: 30px;
-}
+.modal-content { padding: 30px; }
 
 .modal-top {
   display: flex;
@@ -613,6 +641,11 @@ footer {
   margin: 0;
   color: var(--muted);
   line-height: 1.7;
+}
+
+.modal-title-wrap .spotlight-actions {
+  margin-top: 18px;
+  margin-bottom: 0;
 }
 
 .tag {
@@ -636,9 +669,7 @@ footer {
   cursor: pointer;
 }
 
-.close-button:hover {
-  background: rgba(255,255,255,0.1);
-}
+.close-button:hover { background: rgba(255,255,255,0.1); }
 
 .inline-meta {
   display: flex;
@@ -680,24 +711,21 @@ footer {
 }
 
 @media (max-width: 1100px) {
-  .spotlight-slide {
-    grid-template-columns: 1fr;
-  }
-
-  .spotlight-visual {
-    min-height: 220px;
-  }
-
+  .spotlight-slide,
   .contact-card,
   .modal-columns {
     grid-template-columns: 1fr;
   }
+
+  .spotlight-visual { min-height: 220px; }
+
+  .cad-archive-collage {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 760px) {
-  .container {
-    width: min(calc(100% - 28px), var(--max-width));
-  }
+  .container { width: min(calc(100% - 28px), var(--max-width)); }
 
   .nav {
     min-height: auto;
@@ -706,28 +734,29 @@ footer {
     flex-direction: column;
   }
 
-  .spotlight-copy {
-    padding: 34px 24px 30px;
-  }
+  .spotlight-copy { padding: 34px 24px 30px; }
 
   .spotlight-copy h1 {
     max-width: none;
     font-size: clamp(2.2rem, 12vw, 4rem);
   }
 
-  .row-header {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .row-controls {
-    display: none;
-  }
-
+  .row-header,
   .spotlight-controls {
     align-items: flex-start;
     flex-direction: column;
   }
+
+  .row-controls { display: none; }
+
+  .cad-archive-link { padding: 20px; }
+
+  .cad-archive-collage {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-height: 280px;
+  }
+
+  .cad-archive-header h2 { font-size: 1.7rem; }
 
   :root {
     --tile-width: 270px;

@@ -5,12 +5,17 @@ const ROOT = __dirname;
 const DIST = path.join(ROOT, "dist");
 const PROJECTS_DIR = path.join(ROOT, "projects");
 const DATA_DIR = path.join(DIST, "data");
+const CAD_SOURCE_DIR = path.join(ROOT, "cad-thumbnails");
+const CAD_ROUTE = "additional-cad-work";
+const CAD_DATA_FILE = "additional-cad-work.generated.json";
 
 const ROOT_FILES_TO_COPY = [
   "index.html",
   "styles.css",
   "script.js",
-  "project-page.css"
+  "project-page.css",
+  "cad-gallery.css",
+  "cad-gallery.js"
 ];
 
 const CATEGORY_LABELS = {
@@ -190,7 +195,6 @@ function renderVideos(project) {
 
 function renderModels(project) {
   if (!project.models.length) return "";
-
   return `
     <section class="project-section">
       <h2>3D Models</h2>
@@ -319,6 +323,62 @@ function renderProjectPage(project) {
 </html>`;
 }
 
+function getCadImageFiles() {
+  if (!fs.existsSync(CAD_SOURCE_DIR)) return [];
+
+  const allowed = new Set([".png", ".jpg", ".jpeg", ".webp"]);
+
+  return fs
+    .readdirSync(CAD_SOURCE_DIR)
+    .filter((fileName) => allowed.has(path.extname(fileName).toLowerCase()))
+    .sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: "base" }))
+    .map((fileName) => ({
+      fileName,
+      src: `/${CAD_ROUTE}/images/${encodeURIComponent(fileName)}`
+    }));
+}
+
+function renderCadGalleryPage() {
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Additional CAD Work | Robert Stevenson</title>
+  <link rel="stylesheet" href="/cad-gallery.css" />
+  <script src="/cad-gallery.js" defer></script>
+</head>
+<body>
+  <header class="archive-header">
+    <div class="container archive-header-inner">
+      <a class="back-link" href="/">← Back to Portfolio</a>
+      <span class="site-name">Robert Stevenson</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="archive-hero container">
+      <span class="eyebrow">Archive</span>
+      <h1>Additional CAD Work</h1>
+    </section>
+
+    <section class="container">
+      <div class="archive-grid" id="cadGalleryGrid"></div>
+    </section>
+  </main>
+
+  <div class="cad-lightbox" id="cadLightbox" aria-hidden="true">
+    <button class="cad-lightbox-close" id="cadLightboxClose" aria-label="Close">✕</button>
+    <button class="cad-lightbox-nav prev" id="cadLightboxPrev" aria-label="Previous image">‹</button>
+    <div class="cad-lightbox-stage">
+      <img id="cadLightboxImage" alt="Additional CAD Work image" />
+    </div>
+    <button class="cad-lightbox-nav next" id="cadLightboxNext" aria-label="Next image">›</button>
+  </div>
+</body>
+</html>`;
+}
+
 function main() {
   cleanDir(DIST);
   ensureDir(DATA_DIR);
@@ -358,6 +418,19 @@ function main() {
     ensureDir(path.dirname(outputPath));
     fs.writeFileSync(outputPath, renderProjectPage(project), "utf8");
   }
+
+  const cadImages = getCadImageFiles();
+  copyRecursive(CAD_SOURCE_DIR, path.join(DIST, CAD_ROUTE, "images"));
+
+  fs.writeFileSync(
+    path.join(DATA_DIR, CAD_DATA_FILE),
+    JSON.stringify(cadImages, null, 2),
+    "utf8"
+  );
+
+  const cadGalleryOutput = path.join(DIST, CAD_ROUTE, "index.html");
+  ensureDir(path.dirname(cadGalleryOutput));
+  fs.writeFileSync(cadGalleryOutput, renderCadGalleryPage(), "utf8");
 
   console.log(`Built ${projects.length} projects into ${DIST}`);
 }
