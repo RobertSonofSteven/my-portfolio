@@ -31,30 +31,30 @@ let spotlightTimer = null;
 function getToneGlow(tone) {
   switch (tone) {
     case "personal":
-      return "rgba(95, 179, 255, 0.26)";
+      return "rgba(88, 166, 255, 0.26)";
     case "fitness":
-      return "rgba(255, 171, 74, 0.3)";
+      return "rgba(64, 156, 255, 0.26)";
     case "car":
-      return "rgba(97, 232, 163, 0.24)";
+      return "rgba(75, 139, 255, 0.24)";
     case "fabrication":
-      return "rgba(180, 145, 255, 0.24)";
+      return "rgba(102, 153, 255, 0.24)";
     default:
-      return "rgba(229, 9, 20, 0.24)";
+      return "rgba(30, 111, 255, 0.24)";
   }
 }
 
 function getToneBase(tone) {
   switch (tone) {
     case "personal":
-      return "#1c2c40";
+      return "#14243d";
     case "fitness":
-      return "#392714";
+      return "#10233c";
     case "car":
-      return "#173125";
+      return "#13243a";
     case "fabrication":
-      return "#261c3c";
+      return "#182544";
     default:
-      return "#311214";
+      return "#10203a";
   }
 }
 
@@ -101,7 +101,7 @@ function openModal(project) {
   modalOverview.textContent = project.overview;
 
   modalHighlights.innerHTML = "";
-  (project.highlights?.length ? project.highlights : project.keywords.slice(0, 4)).forEach((item) => {
+  (project.highlights?.length ? project.highlights : (project.keywords || []).slice(0, 4)).forEach((item) => {
     const li = document.createElement("li");
     li.textContent = item;
     modalHighlights.appendChild(li);
@@ -348,14 +348,10 @@ async function init() {
     if (!response.ok) throw new Error("Could not load generated project data.");
     const projects = (await response.json()).sort(sortProjects);
 
-    spotlightProjects = projects
-      .filter((project) => project.spotlight)
-      .slice(0, 3);
+    spotlightProjects = projects.filter((project) => project.spotlight).slice(0, 3);
 
     if (!spotlightProjects.length) {
-      spotlightProjects = projects
-        .filter((project) => project.featured)
-        .slice(0, 3);
+      spotlightProjects = projects.filter((project) => project.featured).slice(0, 3);
     }
 
     buildSpotlight(spotlightProjects);
@@ -368,7 +364,6 @@ async function init() {
       <section class="row-section">
         <div class="row-header-left">
           <h2>Project data failed to load</h2>
-          <p>Check that /data/projects.generated.json exists in the deployed output.</p>
         </div>
       </section>
     `;
