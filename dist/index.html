@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robert Stevenson | Engineering Portfolio</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="nav-left">
+        <a href="#top" class="brand">Robert Stevenson</a>
+        <nav class="nav-links">
+          <a href="#top" class="active">Home</a>
+          <a href="#featured">Featured</a>
+          <a href="#work">Work</a>
+          <a href="#personal">Personal</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="nav-right">
+        <span>Engineering Portfolio</span>
+        <span class="profile-pill">RS</span>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="spotlight-hero container" id="featured">
+      <div class="spotlight-panel" id="spotlightPanel"></div>
+      <div class="spotlight-controls">
+        <p class="spotlight-note">Top spotlight rotates through 3 selected projects every 30 seconds.</p>
+        <div class="spotlight-indicators" id="spotlightIndicators"></div>
+      </div>
+    </section>
+
+    <section class="container rows-area" id="rowsArea"></section>
+
+    <section class="container contact-section" id="contact">
+      <div class="contact-card">
+        <div>
+          <h3>Contact</h3>
+          <p>
+            Add your real information here so recruiters, hiring managers, and collaborators can reach you directly.
+            The external buttons are ready for places like LinkedIn, GitHub, your resume, or any project page you want to highlight.
+          </p>
+          <div class="contact-links">
+            <a class="contact-link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="contact-link" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="contact-link" href="#">Resume</a>
+            <a class="contact-link" href="mailto:you@example.com">Email Me</a>
+          </div>
+        </div>
+        <div class="contact-list">
+          <div class="contact-item">
+            <span class="contact-label">Name</span>
+            <span class="contact-value">Robert Stevenson</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Email</span>
+            <a class="contact-value" href="mailto:you@example.com">you@example.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">LinkedIn</span>
+            <a class="contact-value" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">linkedin.com/in/your-profile</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Greater Chicago Area</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div>© 2026 Robert Stevenson. Built for iteration.</div>
+  </footer>
+
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-media" id="modalMedia"></div>
+      <div class="modal-content">
+        <div class="modal-top">
+          <div class="modal-title-wrap">
+            <div class="tag" id="modalCategory">Category</div>
+            <h3 id="modalTitle">Project Title</h3>
+            <p id="modalDescription">Project description goes here.</p>
+            <div class="inline-meta" id="modalMeta"></div>
+          </div>
+          <button class="close-button" id="closeModal" aria-label="Close modal">✕</button>
+        </div>
+
+        <div class="modal-columns">
+          <div>
+            <h4>Overview</h4>
+            <p id="modalOverview"></p>
+          </div>
+          <div>
+            <h4>Highlights</h4>
+            <ul class="modal-list" id="modalHighlights"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

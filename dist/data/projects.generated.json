@@ -1,0 +1,651 @@
+[
+  {
+    "slug": "3d-printed-electronics-enclosure",
+    "title": "3D Printed Electronics Enclosure",
+    "heroLabel": "3D Printing Highlight",
+    "categories": [
+      "3d-printing"
+    ],
+    "categoryLabel": "3D Printing",
+    "keywords": [
+      "3d printing",
+      "electronics enclosure",
+      "prototype",
+      "enclosure",
+      "print for fit",
+      "product design"
+    ],
+    "tone": "fabrication",
+    "featured": false,
+    "spotlight": false,
+    "sortOrder": 999,
+    "summary": "A category-fit placeholder for enclosure design, prototype iteration, and print-for-fit work.",
+    "description": "A flexible fabrication project slot for a future printed enclosure case study.",
+    "overview": "This is a useful placeholder because it fits naturally with your printer, electronics, and product design interests. It can later become a real project with design iterations, print settings, and fit testing photos.",
+    "highlights": [
+      "3d printing",
+      "electronics enclosure",
+      "prototype",
+      "enclosure"
+    ],
+    "meta": [
+      "3D Printing",
+      "Fabrication",
+      "Prototype"
+    ],
+    "thumbnail": "/projects/3d-printed-electronics-enclosure/thumb.jpg",
+    "heroImage": "/projects/3d-printed-electronics-enclosure/hero.jpg",
+    "gallery": [
+      "/projects/3d-printed-electronics-enclosure/gallery-1.jpg"
+    ],
+    "videos": [],
+    "models": [
+      "/projects/3d-printed-electronics-enclosure/model.glb"
+    ],
+    "links": {
+      "github": "",
+      "external": ""
+    },
+    "pageUrl": "/projects/3d-printed-electronics-enclosure/"
+  },
+  {
+    "slug": "3d-printer-upgrade-rebuild",
+    "title": "3D Printer Upgrade / Rebuild",
+    "heroLabel": "3D Printing Highlight",
+    "categories": [
+      "3d-printing"
+    ],
+    "categoryLabel": "3D Printing",
+    "keywords": [
+      "3d printer",
+      "printer rebuild",
+      "fabrication",
+      "optimization",
+      "hardware upgrade",
+      "tuning"
+    ],
+    "tone": "fabrication",
+    "featured": false,
+    "spotlight": false,
+    "sortOrder": 999,
+    "summary": "A rebuild-oriented project using older hardware as a platform for refinement and learning.",
+    "description": "A practical engineering build that demonstrates troubleshooting and iterative improvement.",
+    "overview": "This can be framed as a system optimization project rather than just a hobby build. Documenting decisions, changes, and improvements would make it portfolio-worthy.",
+    "highlights": [
+      "3d printer",
+      "printer rebuild",
+      "fabrication",
+      "optimization"
+    ],
+    "meta": [
+      "3D Printing",
+      "Fabrication",
+      "Prototype"
+    ],
+    "thumbnail": "/projects/3d-printer-upgrade-rebuild/thumb.jpg",
+    "heroImage": "/projects/3d-printer-upgrade-rebuild/hero.jpg",
+    "gallery": [
+      "/projects/3d-printer-upgrade-rebuild/gallery-1.jpg",
+      "/projects/3d-printer-upgrade-rebuild/gallery-2.jpg"
+    ],
+    "videos": [
+      "/projects/3d-printer-upgrade-rebuild/demo.mp4"
+    ],
+    "models": [],
+    "links": {
+      "github": "",
+      "external": ""
+    },
+    "pageUrl": "/projects/3d-printer-upgrade-rebuild/"
+  },
+  {
+    "slug": "barbell-velocity-tracker",
+    "title": "Barbell Velocity Tracker",
+    "heroLabel": "Fitness Highlight",
+    "categories": [
+      "fitness"
+    ],
+    "categoryLabel": "Fitness Tech",
+    "keywords": [
+      "fitness",
+      "velocity tracker",
+      "barbell",
+      "sensors",
+      "lifting",
+      "training data"
+    ],
+    "tone": "fitness",
+    "featured": false,
+    "spotlight": false,
+    "sortOrder": 999,
+    "summary": "A concept for measuring lifting speed and rep performance using sensors and data.",
+    "description": "A technical concept with room for hardware, mechanics, and data visualization.",
+    "overview": "This project could become a very strong engineering portfolio piece because it crosses mechanical setup, sensor mounting, data acquisition, and user-focused product thinking.",
+    "highlights": [
+      "fitness",
+      "velocity tracker",
+      "barbell",
+      "sensors"
+    ],
+    "meta": [
+      "Fitness",
+      "Sensors",
+      "Data"
+    ],
+    "thumbnail": "/projects/barbell-velocity-tracker/thumb.jpg",
+    "heroImage": "/projects/barbell-velocity-tracker/hero.jpg",
+    "gallery": [
+      "/projects/barbell-velocity-tracker/gallery-1.jpg"
+    ],
+    "videos": [
+      "/projects/barbell-velocity-tracker/demo.mp4"
+    ],
+    "models": [
+      "/projects/barbell-velocity-tracker/model.glb"
+    ],
+    "links": {
+      "github": "",
+      "external": ""
+    },
+    "pageUrl": "/projects/barbell-velocity-tracker/"
+  },
+  {
+    "slug": "crt-arcade-cabinet",
+    "title": "CRT Arcade Cabinet",
+    "heroLabel": "Personal Highlight",
+    "categories": [
+      "featured",
+      "personal"
+    ],
+    "categoryLabel": "Personal",
+    "keywords": [
+      "arcade",
+      "crt",
+      "raspberry pi",
+      "retro gaming",
+      "controls",
+      "cabinet"
+    ],
+    "tone": "personal",
+    "featured": true,
+    "spotlight": false,
+    "sortOrder": 999,
+    "summary": "A retro gaming build combining Raspberry Pi setup, controls, and CRT presentation.",
+    "description": "A hands-on project that blends electronics, fabrication, interface setup, and nostalgic product design.",
+    "overview": "This project has great visual appeal and gives your portfolio personality. It can show troubleshooting, mechanical mounting, software setup, user-experience thinking, and finish details.",
+    "highlights": [
+      "arcade",
+      "crt",
+      "raspberry pi",
+      "retro gaming"
+    ],
+    "meta": [
+      "Personal",
+      "Build",
+      "Prototype"
+    ],
+    "thumbnail": "/projects/crt-arcade-cabinet/thumb.jpg",
+    "heroImage": "/projects/crt-arcade-cabinet/hero.jpg",
+    "gallery": [
+      "/projects/crt-arcade-cabinet/gallery-1.jpg"
+    ],
+    "videos": [
+      "/projects/crt-arcade-cabinet/demo.mp4"
+    ],
+    "models": [],
+    "links": {
+      "github": "",
+      "external": ""
+    },
+    "pageUrl": "/projects/crt-arcade-cabinet/"
+  },
+  {
+    "slug": "lx470-cooling-system-troubleshooting",
+    "title": "LX470 Cooling System Troubleshooting",
+    "heroLabel": "Car Highlight",
+    "categories": [
+      "car"
+    ],
+    "categoryLabel": "Car",
+    "keywords": [
+      "lx470",
+      "cooling system",
+      "automotive",
+      "diagnosis",
+      "troubleshooting",
+      "radiator"
+    ],
+    "tone": "car",
+    "featured": false,
+    "spotlight": false,
+    "sortOrder": 999,
+    "summary": "A vehicle troubleshooting case built around cooling system behavior, airflow, and diagnosis.",
+    "description": "A hands-on automotive project that can show diagnostic logic and practical mechanical reasoning.",
+    "overview": "This can become a clean portfolio story about identifying symptoms, investigating causes, and narrowing down mechanical issues in a real vehicle system. It is useful because it shows methodical engineering thinking applied outside formal product development.",
+    "highlights": [
+      "lx470",
+      "cooling system",
+      "automotive",
+      "diagnosis"
+    ],
+    "meta": [
+      "Automotive",
+      "Integration",
+      "Troubleshooting"
+    ],
+    "thumbnail": "/projects/lx470-cooling-system-troubleshooting/thumb.jpg",
+    "heroImage": "/projects/lx470-cooling-system-troubleshooting/hero.jpg",
+    "gallery": [
+      "/projects/lx470-cooling-system-troubleshooting/gallery-1.jpg"
+    ],
+    "videos": [],
+    "models": [],
+    "links": {
+      "github": "",
+      "external": ""
+    },
+    "pageUrl": "/projects/lx470-cooling-system-troubleshooting/"
+  },
+  {
+    "slug": "macro-pad-pcb",
+    "title": "Macro Pad PCB",
+    "heroLabel": "Featured Project",
+    "categories": [
+      "featured",
+      "personal",
+      "3d-printing"
+    ],
+    "categoryLabel": "Personal",
+    "keywords": [
+      "pcb",
+      "macro pad",
+      "hall effect",
+      "kicad",
+      "electronics",
+      "rotary knob",
+      "input device"
+    ],
+    "tone": "personal",
+    "featured": true,
+    "spotlight": true,
+    "sortOrder": 999,
+    "summary": "A custom macro pad concept with knobs, hall-effect inputs, and a purpose-built PCB.",
+    "description": "A hardware project combining industrial design, input ergonomics, and PCB planning.",
+    "overview": "This project is intended to showcase a mix of enclosure design, electronics integration, and user interface thinking. It can later include schematics, PCB renders, firmware notes, and prototype photos.",
+    "highlights": [
+      "pcb",
+      "macro pad",
+      "hall effect",
+      "kicad"
+    ],
+    "meta": [
+      "Personal",
+      "Build",
+      "Prototype"
+    ],
+    "thumbnail": "/projects/macro-pad-pcb/thumb.jpg",
+    "heroImage": "/projects/macro-pad-pcb/hero.jpg",
+    "gallery": [
+      "/projects/macro-pad-pcb/gallery-1.jpg"
+    ],
+    "videos": [
+      "/projects/macro-pad-pcb/demo.mp4"
+    ],
+    "models": [
+      "/projects/macro-pad-pcb/model.glb"
+    ],
+    "links": {
+      "github": "",
+      "external": ""
+    },
+    "pageUrl": "/projects/macro-pad-pcb/"
+  },
+  {
+    "slug": "encoder-redesign",
+    "title": "Magnetic Encoder Redesign",
+    "heroLabel": "Featured Project",
+    "categories": [
+      "featured",
+      "work"
+    ],
+    "categoryLabel": "Work",
+    "keywords": [
+      "encoder",
+      "hall sensor",
+      "magnetic encoder",
+      "packaging",
+      "manufacturing",
+      "redesign"
+    ],
+    "tone": "work",
+    "featured": true,
+    "spotlight": true,
+    "sortOrder": 999,
+    "summary": "Redesign work involving magnetic encoder packaging, manufacturability, and system integration.",
+    "description": "An engineering-focused redesign project that can highlight practical constraints and real-world iteration.",
+    "overview": "This entry is a strong candidate for a case-study page showing the design process, packaging constraints, cost considerations, electrical coordination, and implementation outcomes.",
+    "highlights": [
+      "encoder",
+      "hall sensor",
+      "magnetic encoder",
+      "packaging"
+    ],
+    "meta": [
+      "Work",
+      "Engineering",
+      "Design"
+    ],
+    "thumbnail": "/projects/encoder-redesign/thumb.jpg",
+    "heroImage": "/projects/encoder-redesign/hero.jpg",
+    "gallery": [
+      "/projects/encoder-redesign/gallery-1.jpg"
+    ],
+    "videos": [],
+    "models": [
+      "/projects/encoder-redesign/model.glb"
+    ],
+    "links": {
+      "github": "",
+      "external": ""
+    },
+    "pageUrl": "/projects/encoder-redesign/"
+  },
+  {
+    "slug": "panel-mount-magsafe-charger-concept",
+    "title": "Panel-Mount MagSafe Charger Concept",
+    "heroLabel": "Car Highlight",
+    "categories": [
+      "car"
+    ],
+    "categoryLabel": "Car",
+    "keywords": [
+      "magsafe",
+      "car charger",
+      "automotive electronics",
+      "mount",
+      "packaging",
+      "power"
+    ],
+    "tone": "car",
+    "featured": false,
+    "spotlight": false,
+    "sortOrder": 999,
+    "summary": "A vehicle-mounted charging concept combining packaging, power conversion, and clean integration.",
+    "description": "A compact automotive electronics concept focused on function, fit, and finish.",
+    "overview": "This is a good portfolio piece because it feels like a real consumer product. It can show packaging constraints, electrical considerations, mounting design, and a thoughtful user experience inside a vehicle environment.",
+    "highlights": [
+      "magsafe",
+      "car charger",
+      "automotive electronics",
+      "mount"
+    ],
+    "meta": [
+      "Automotive",
+      "Integration",
+      "Troubleshooting"
+    ],
+    "thumbnail": "/projects/panel-mount-magsafe-charger-concept/thumb.jpg",
+    "heroImage": "/projects/panel-mount-magsafe-charger-concept/hero.jpg",
+    "gallery": [
+      "/projects/panel-mount-magsafe-charger-concept/gallery-1.jpg"
+    ],
+    "videos": [],
+    "models": [
+      "/projects/panel-mount-magsafe-charger-concept/model.glb"
+    ],
+    "links": {
+      "github": "",
+      "external": ""
+    },
+    "pageUrl": "/projects/panel-mount-magsafe-charger-concept/"
+  },
+  {
+    "slug": "portfolio-website",
+    "title": "Portfolio Website",
+    "heroLabel": "Personal Highlight",
+    "categories": [
+      "featured",
+      "personal"
+    ],
+    "categoryLabel": "Personal",
+    "keywords": [
+      "portfolio",
+      "website",
+      "frontend",
+      "branding",
+      "github pages",
+      "vercel"
+    ],
+    "tone": "personal",
+    "featured": true,
+    "spotlight": false,
+    "sortOrder": 999,
+    "summary": "The site itself can become a project, documenting design choices and implementation.",
+    "description": "A meta-project that demonstrates visual communication and technical presentation.",
+    "overview": "Even though this is not a traditional mechanical project, it is still worth including as a brief case study because it shows how you communicate engineering work, structure information, and present yourself professionally.",
+    "highlights": [
+      "portfolio",
+      "website",
+      "frontend",
+      "branding"
+    ],
+    "meta": [
+      "Personal",
+      "Build",
+      "Prototype"
+    ],
+    "thumbnail": "/projects/portfolio-website/thumb.jpg",
+    "heroImage": "/projects/portfolio-website/hero.jpg",
+    "gallery": [
+      "/projects/portfolio-website/gallery-1.jpg"
+    ],
+    "videos": [],
+    "models": [],
+    "links": {
+      "github": "",
+      "external": ""
+    },
+    "pageUrl": "/projects/portfolio-website/"
+  },
+  {
+    "slug": "rugged-display-redesign",
+    "title": "Rugged Display Redesign",
+    "heroLabel": "Work Highlight",
+    "categories": [
+      "work"
+    ],
+    "categoryLabel": "Work",
+    "keywords": [
+      "display",
+      "redesign",
+      "packaging",
+      "product design",
+      "manufacturing",
+      "industrial"
+    ],
+    "tone": "work",
+    "featured": false,
+    "spotlight": false,
+    "sortOrder": 999,
+    "summary": "A work-style placeholder for a product redesign focused on packaging, usability, and implementation.",
+    "description": "A professional-looking case-study slot for a future work project writeup.",
+    "overview": "This placeholder keeps the work row full while giving you a spot for another strong product design case study. Later it can be replaced with a real project from your job or consulting work.",
+    "highlights": [
+      "display",
+      "redesign",
+      "packaging",
+      "product design"
+    ],
+    "meta": [
+      "Work",
+      "Engineering",
+      "Design"
+    ],
+    "thumbnail": "/projects/rugged-display-redesign/thumb.jpg",
+    "heroImage": "/projects/rugged-display-redesign/hero.jpg",
+    "gallery": [
+      "/projects/rugged-display-redesign/gallery-1.jpg"
+    ],
+    "videos": [],
+    "models": [],
+    "links": {
+      "github": "",
+      "external": ""
+    },
+    "pageUrl": "/projects/rugged-display-redesign/"
+  },
+  {
+    "slug": "smart-rep-counter",
+    "title": "Smart Rep Counter",
+    "heroLabel": "Fitness Highlight",
+    "categories": [
+      "fitness"
+    ],
+    "categoryLabel": "Fitness Tech",
+    "keywords": [
+      "fitness",
+      "rep counter",
+      "embedded",
+      "exercise tracker",
+      "sensors",
+      "prototype"
+    ],
+    "tone": "fitness",
+    "featured": false,
+    "spotlight": false,
+    "sortOrder": 999,
+    "summary": "A workout-oriented embedded device concept for tracking exercise repetitions accurately.",
+    "description": "A practical user-centered product idea that can show design-for-use thinking.",
+    "overview": "This is the kind of project that can be documented from concept sketches through prototype testing. It has strong potential as a portfolio piece because the value proposition is easy to understand immediately.",
+    "highlights": [
+      "fitness",
+      "rep counter",
+      "embedded",
+      "exercise tracker"
+    ],
+    "meta": [
+      "Fitness",
+      "Sensors",
+      "Data"
+    ],
+    "thumbnail": "/projects/smart-rep-counter/thumb.jpg",
+    "heroImage": "/projects/smart-rep-counter/hero.jpg",
+    "gallery": [
+      "/projects/smart-rep-counter/gallery-1.jpg"
+    ],
+    "videos": [
+      "/projects/smart-rep-counter/demo.mp4"
+    ],
+    "models": [
+      "/projects/smart-rep-counter/model.glb"
+    ],
+    "links": {
+      "github": "",
+      "external": ""
+    },
+    "pageUrl": "/projects/smart-rep-counter/"
+  },
+  {
+    "slug": "stewart-platform-ping-pong",
+    "title": "Stewart Platform Ping Pong Concept",
+    "heroLabel": "Personal Highlight",
+    "categories": [
+      "personal"
+    ],
+    "categoryLabel": "Personal",
+    "keywords": [
+      "stewart platform",
+      "ping pong",
+      "mechanism",
+      "motion control",
+      "actuation",
+      "mechanical system"
+    ],
+    "tone": "personal",
+    "featured": false,
+    "spotlight": false,
+    "sortOrder": 999,
+    "summary": "A dynamic motion-control concept exploring repeated bounce control and actuation.",
+    "description": "A visually interesting concept that can showcase mechanism thinking and system design.",
+    "overview": "This project is useful because it communicates engineering curiosity. It can highlight mechanism layout, control ideas, and the challenge of balancing responsiveness, motion range, and stability.",
+    "highlights": [
+      "stewart platform",
+      "ping pong",
+      "mechanism",
+      "motion control"
+    ],
+    "meta": [
+      "Personal",
+      "Build",
+      "Prototype"
+    ],
+    "thumbnail": "/projects/stewart-platform-ping-pong/thumb.jpg",
+    "heroImage": "/projects/stewart-platform-ping-pong/hero.jpg",
+    "gallery": [
+      "/projects/stewart-platform-ping-pong/gallery-1.jpg"
+    ],
+    "videos": [],
+    "models": [
+      "/projects/stewart-platform-ping-pong/model.glb"
+    ],
+    "links": {
+      "github": "",
+      "external": ""
+    },
+    "pageUrl": "/projects/stewart-platform-ping-pong/"
+  },
+  {
+    "slug": "vaporlogicai",
+    "title": "VaporLogicAI",
+    "heroLabel": "Featured Project",
+    "categories": [
+      "featured",
+      "work"
+    ],
+    "categoryLabel": "Work",
+    "keywords": [
+      "corrugated",
+      "spray system",
+      "automation",
+      "pid",
+      "ai",
+      "moisture control",
+      "warpage"
+    ],
+    "tone": "work",
+    "featured": true,
+    "spotlight": true,
+    "sortOrder": 999,
+    "summary": "Zone-based moisture control concept for corrugated board quality and warpage correction.",
+    "description": "A control-focused concept for improving corrugated board flatness with smarter zone-based spray control.",
+    "overview": "This project explores a water spraying system for corrugated paper manufacturing using atomizing nozzles, air and water control, and future feedback-driven tuning. It is a strong example of mechanical, controls, and product-thinking overlap.",
+    "highlights": [
+      "corrugated",
+      "spray system",
+      "automation",
+      "pid"
+    ],
+    "meta": [
+      "Work",
+      "Engineering",
+      "Design"
+    ],
+    "thumbnail": "/projects/vaporlogicai/thumb.jpg",
+    "heroImage": "/projects/vaporlogicai/hero.jpg",
+    "gallery": [
+      "/projects/vaporlogicai/gallery-1.jpg",
+      "/projects/vaporlogicai/gallery-2.jpg"
+    ],
+    "videos": [
+      "/projects/vaporlogicai/demo.mp4"
+    ],
+    "models": [
+      "/projects/vaporlogicai/model.glb"
+    ],
+    "links": {
+      "github": "",
+      "external": ""
+    },
+    "pageUrl": "/projects/vaporlogicai/"
+  }
+]

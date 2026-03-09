@@ -1,0 +1,22 @@
+{
+  "slug": "barbell-velocity-tracker",
+  "title": "Barbell Velocity Tracker",
+  "heroLabel": "Fitness Highlight",
+  "categories": ["fitness"],
+  "keywords": ["fitness", "velocity tracker", "barbell", "sensors", "lifting", "training data"],
+  "tone": "fitness",
+  "featured": false,
+  "spotlight": false,
+  "summary": "A concept for measuring lifting speed and rep performance using sensors and data.",
+  "description": "A technical concept with room for hardware, mechanics, and data visualization.",
+  "overview": "This project could become a very strong engineering portfolio piece because it crosses mechanical setup, sensor mounting, data acquisition, and user-focused product thinking.",
+  "thumbnail": "thumb.jpg",
+  "heroImage": "hero.jpg",
+  "gallery": ["gallery-1.jpg"],
+  "videos": ["demo.mp4"],
+  "models": ["model.glb"],
+  "links": {
+    "github": "",
+    "external": ""
+  }
+}

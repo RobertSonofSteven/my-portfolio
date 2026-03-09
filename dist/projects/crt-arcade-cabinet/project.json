@@ -1,0 +1,22 @@
+{
+  "slug": "crt-arcade-cabinet",
+  "title": "CRT Arcade Cabinet",
+  "heroLabel": "Personal Highlight",
+  "categories": ["featured", "personal"],
+  "keywords": ["arcade", "crt", "raspberry pi", "retro gaming", "controls", "cabinet"],
+  "tone": "personal",
+  "featured": true,
+  "spotlight": false,
+  "summary": "A retro gaming build combining Raspberry Pi setup, controls, and CRT presentation.",
+  "description": "A hands-on project that blends electronics, fabrication, interface setup, and nostalgic product design.",
+  "overview": "This project has great visual appeal and gives your portfolio personality. It can show troubleshooting, mechanical mounting, software setup, user-experience thinking, and finish details.",
+  "thumbnail": "thumb.jpg",
+  "heroImage": "hero.jpg",
+  "gallery": ["gallery-1.jpg"],
+  "videos": ["demo.mp4"],
+  "models": [],
+  "links": {
+    "github": "",
+    "external": ""
+  }
+}

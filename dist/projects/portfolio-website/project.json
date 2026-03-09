@@ -1,0 +1,22 @@
+{
+  "slug": "portfolio-website",
+  "title": "Portfolio Website",
+  "heroLabel": "Personal Highlight",
+  "categories": ["featured", "personal"],
+  "keywords": ["portfolio", "website", "frontend", "branding", "github pages", "vercel"],
+  "tone": "personal",
+  "featured": true,
+  "spotlight": false,
+  "summary": "The site itself can become a project, documenting design choices and implementation.",
+  "description": "A meta-project that demonstrates visual communication and technical presentation.",
+  "overview": "Even though this is not a traditional mechanical project, it is still worth including as a brief case study because it shows how you communicate engineering work, structure information, and present yourself professionally.",
+  "thumbnail": "thumb.jpg",
+  "heroImage": "hero.jpg",
+  "gallery": ["gallery-1.jpg"],
+  "videos": [],
+  "models": [],
+  "links": {
+    "github": "",
+    "external": ""
+  }
+}

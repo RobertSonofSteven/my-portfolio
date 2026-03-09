@@ -1,0 +1,22 @@
+{
+  "slug": "panel-mount-magsafe-charger-concept",
+  "title": "Panel-Mount MagSafe Charger Concept",
+  "heroLabel": "Car Highlight",
+  "categories": ["car"],
+  "keywords": ["magsafe", "car charger", "automotive electronics", "mount", "packaging", "power"],
+  "tone": "car",
+  "featured": false,
+  "spotlight": false,
+  "summary": "A vehicle-mounted charging concept combining packaging, power conversion, and clean integration.",
+  "description": "A compact automotive electronics concept focused on function, fit, and finish.",
+  "overview": "This is a good portfolio piece because it feels like a real consumer product. It can show packaging constraints, electrical considerations, mounting design, and a thoughtful user experience inside a vehicle environment.",
+  "thumbnail": "thumb.jpg",
+  "heroImage": "hero.jpg",
+  "gallery": ["gallery-1.jpg"],
+  "videos": [],
+  "models": ["model.glb"],
+  "links": {
+    "github": "",
+    "external": ""
+  }
+}

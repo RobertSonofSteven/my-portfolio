@@ -1,0 +1,22 @@
+{
+  "slug": "3d-printed-electronics-enclosure",
+  "title": "3D Printed Electronics Enclosure",
+  "heroLabel": "3D Printing Highlight",
+  "categories": ["3d-printing"],
+  "keywords": ["3d printing", "electronics enclosure", "prototype", "enclosure", "print for fit", "product design"],
+  "tone": "fabrication",
+  "featured": false,
+  "spotlight": false,
+  "summary": "A category-fit placeholder for enclosure design, prototype iteration, and print-for-fit work.",
+  "description": "A flexible fabrication project slot for a future printed enclosure case study.",
+  "overview": "This is a useful placeholder because it fits naturally with your printer, electronics, and product design interests. It can later become a real project with design iterations, print settings, and fit testing photos.",
+  "thumbnail": "thumb.jpg",
+  "heroImage": "hero.jpg",
+  "gallery": ["gallery-1.jpg"],
+  "videos": [],
+  "models": ["model.glb"],
+  "links": {
+    "github": "",
+    "external": ""
+  }
+}
