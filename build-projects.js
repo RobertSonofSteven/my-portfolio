@@ -17,9 +17,12 @@ const CATEGORY_LABELS = {
   featured: "Featured",
   work: "Work",
   personal: "Personal",
-  fitness: "Fitness Tech",
-  car: "Car",
-  "3d-printing": "3D Printing"
+  "mechanical-design": "Mechanical Design",
+  "electronics-embedded": "Electronics & Embedded",
+  "automation-controls": "Automation & Controls",
+  "fabrication-prototyping": "Fabrication & Prototyping",
+  "software-data": "Software & Data",
+  automotive: "Automotive"
 };
 
 const TONE_DEFAULTS = {
@@ -71,11 +74,12 @@ function toPublicProjectPath(slug, fileName) {
 
 function inferTone(categories, fallbackTone) {
   if (fallbackTone) return fallbackTone;
-  if (categories.includes("work")) return "work";
-  if (categories.includes("fitness")) return "fitness";
-  if (categories.includes("car")) return "car";
-  if (categories.includes("3d-printing")) return "fabrication";
-  return "personal";
+  if (categories.includes("automotive")) return "car";
+  if (categories.includes("fabrication-prototyping")) return "fabrication";
+  if (categories.includes("personal")) return "personal";
+  if (categories.includes("electronics-embedded")) return "personal";
+  if (categories.includes("software-data")) return "personal";
+  return "work";
 }
 
 function normalizeProject(raw, folderName) {

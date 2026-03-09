@@ -1,34 +1,13 @@
 const CATEGORY_CONFIG = [
-  {
-    id: "featured",
-    title: "Featured",
-    description: "A curated first row with the projects you most want people to notice first."
-  },
-  {
-    id: "work",
-    title: "Work",
-    description: "Professional projects, product redesigns, automation ideas, and engineering work samples."
-  },
-  {
-    id: "personal",
-    title: "Personal",
-    description: "Projects that show curiosity, initiative, build skill, and cross-disciplinary thinking."
-  },
-  {
-    id: "fitness",
-    title: "Fitness Tech",
-    description: "Sensors, devices, and concepts built around lifting, training, and performance tracking."
-  },
-  {
-    id: "car",
-    title: "Car",
-    description: "Automotive projects, troubleshooting, and vehicle-related design or integration ideas."
-  },
-  {
-    id: "3d-printing",
-    title: "3D Printing",
-    description: "Fabrication-heavy projects, printer tuning, prototype development, and printed components."
-  }
+  { id: "featured", title: "Featured" },
+  { id: "work", title: "Work" },
+  { id: "personal", title: "Personal" },
+  { id: "mechanical-design", title: "Mechanical Design" },
+  { id: "electronics-embedded", title: "Electronics & Embedded" },
+  { id: "automation-controls", title: "Automation & Controls" },
+  { id: "fabrication-prototyping", title: "Fabrication & Prototyping" },
+  { id: "software-data", title: "Software & Data" },
+  { id: "automotive", title: "Automotive" }
 ];
 
 let rowsArea;
@@ -285,7 +264,6 @@ function createRow(rowConfig, items) {
   header.innerHTML = `
     <div class="row-header-left">
       <h2>${rowConfig.title}</h2>
-      <p>${rowConfig.description}</p>
     </div>
     <div class="row-controls">
       <button class="row-control" type="button" aria-label="Scroll ${rowConfig.title} left">‹</button>

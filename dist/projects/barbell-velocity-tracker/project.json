@@ -2,7 +2,7 @@
   "slug": "barbell-velocity-tracker",
   "title": "Barbell Velocity Tracker",
   "heroLabel": "Fitness Highlight",
-  "categories": ["fitness"],
+  "categories": ["personal", "mechanical-design", "electronics-embedded", "software-data"],
   "keywords": ["fitness", "velocity tracker", "barbell", "sensors", "lifting", "training data"],
   "tone": "fitness",
   "featured": false,

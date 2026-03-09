@@ -2,7 +2,7 @@
   "slug": "stewart-platform-ping-pong",
   "title": "Stewart Platform Ping Pong Concept",
   "heroLabel": "Personal Highlight",
-  "categories": ["personal"],
+  "categories": ["personal", "mechanical-design", "automation-controls", "fabrication-prototyping"],
   "keywords": ["stewart platform", "ping pong", "mechanism", "motion control", "actuation", "mechanical system"],
   "tone": "personal",
   "featured": false,

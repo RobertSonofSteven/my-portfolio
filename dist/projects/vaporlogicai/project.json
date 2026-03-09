@@ -2,7 +2,7 @@
   "slug": "vaporlogicai",
   "title": "VaporLogicAI",
   "heroLabel": "Featured Project",
-  "categories": ["featured", "work"],
+  "categories": ["featured", "work", "mechanical-design", "automation-controls", "software-data"],
   "keywords": ["corrugated", "spray system", "automation", "pid", "ai", "moisture control", "warpage"],
   "tone": "work",
   "featured": true,

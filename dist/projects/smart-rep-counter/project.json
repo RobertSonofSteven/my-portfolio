@@ -2,7 +2,7 @@
   "slug": "smart-rep-counter",
   "title": "Smart Rep Counter",
   "heroLabel": "Fitness Highlight",
-  "categories": ["fitness"],
+  "categories": ["personal", "mechanical-design", "electronics-embedded", "software-data"],
   "keywords": ["fitness", "rep counter", "embedded", "exercise tracker", "sensors", "prototype"],
   "tone": "fitness",
   "featured": false,

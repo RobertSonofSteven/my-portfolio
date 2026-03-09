@@ -2,7 +2,7 @@
   "slug": "3d-printer-upgrade-rebuild",
   "title": "3D Printer Upgrade / Rebuild",
   "heroLabel": "3D Printing Highlight",
-  "categories": ["3d-printing"],
+  "categories": ["personal", "mechanical-design", "electronics-embedded", "fabrication-prototyping"],
   "keywords": ["3d printer", "printer rebuild", "fabrication", "optimization", "hardware upgrade", "tuning"],
   "tone": "fabrication",
   "featured": false,

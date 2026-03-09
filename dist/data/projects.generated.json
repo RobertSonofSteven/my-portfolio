@@ -4,9 +4,12 @@
     "title": "3D Printed Electronics Enclosure",
     "heroLabel": "3D Printing Highlight",
     "categories": [
-      "3d-printing"
+      "personal",
+      "mechanical-design",
+      "electronics-embedded",
+      "fabrication-prototyping"
     ],
-    "categoryLabel": "3D Printing",
+    "categoryLabel": "Personal",
     "keywords": [
       "3d printing",
       "electronics enclosure",
@@ -53,9 +56,12 @@
     "title": "3D Printer Upgrade / Rebuild",
     "heroLabel": "3D Printing Highlight",
     "categories": [
-      "3d-printing"
+      "personal",
+      "mechanical-design",
+      "electronics-embedded",
+      "fabrication-prototyping"
     ],
-    "categoryLabel": "3D Printing",
+    "categoryLabel": "Personal",
     "keywords": [
       "3d printer",
       "printer rebuild",
@@ -103,9 +109,12 @@
     "title": "Barbell Velocity Tracker",
     "heroLabel": "Fitness Highlight",
     "categories": [
-      "fitness"
+      "personal",
+      "mechanical-design",
+      "electronics-embedded",
+      "software-data"
     ],
-    "categoryLabel": "Fitness Tech",
+    "categoryLabel": "Personal",
     "keywords": [
       "fitness",
       "velocity tracker",
@@ -154,8 +163,11 @@
     "title": "CRT Arcade Cabinet",
     "heroLabel": "Personal Highlight",
     "categories": [
-      "featured",
-      "personal"
+      "personal",
+      "mechanical-design",
+      "electronics-embedded",
+      "fabrication-prototyping",
+      "software-data"
     ],
     "categoryLabel": "Personal",
     "keywords": [
@@ -204,9 +216,11 @@
     "title": "LX470 Cooling System Troubleshooting",
     "heroLabel": "Car Highlight",
     "categories": [
-      "car"
+      "personal",
+      "automotive",
+      "mechanical-design"
     ],
-    "categoryLabel": "Car",
+    "categoryLabel": "Personal",
     "keywords": [
       "lx470",
       "cooling system",
@@ -253,7 +267,9 @@
     "categories": [
       "featured",
       "personal",
-      "3d-printing"
+      "mechanical-design",
+      "electronics-embedded",
+      "fabrication-prototyping"
     ],
     "categoryLabel": "Personal",
     "keywords": [
@@ -306,7 +322,10 @@
     "heroLabel": "Featured Project",
     "categories": [
       "featured",
-      "work"
+      "work",
+      "mechanical-design",
+      "electronics-embedded",
+      "automation-controls"
     ],
     "categoryLabel": "Work",
     "keywords": [
@@ -355,9 +374,12 @@
     "title": "Panel-Mount MagSafe Charger Concept",
     "heroLabel": "Car Highlight",
     "categories": [
-      "car"
+      "personal",
+      "automotive",
+      "mechanical-design",
+      "electronics-embedded"
     ],
-    "categoryLabel": "Car",
+    "categoryLabel": "Personal",
     "keywords": [
       "magsafe",
       "car charger",
@@ -404,8 +426,8 @@
     "title": "Portfolio Website",
     "heroLabel": "Personal Highlight",
     "categories": [
-      "featured",
-      "personal"
+      "personal",
+      "software-data"
     ],
     "categoryLabel": "Personal",
     "keywords": [
@@ -452,7 +474,9 @@
     "title": "Rugged Display Redesign",
     "heroLabel": "Work Highlight",
     "categories": [
-      "work"
+      "work",
+      "mechanical-design",
+      "electronics-embedded"
     ],
     "categoryLabel": "Work",
     "keywords": [
@@ -499,9 +523,12 @@
     "title": "Smart Rep Counter",
     "heroLabel": "Fitness Highlight",
     "categories": [
-      "fitness"
+      "personal",
+      "mechanical-design",
+      "electronics-embedded",
+      "software-data"
     ],
-    "categoryLabel": "Fitness Tech",
+    "categoryLabel": "Personal",
     "keywords": [
       "fitness",
       "rep counter",
@@ -550,7 +577,10 @@
     "title": "Stewart Platform Ping Pong Concept",
     "heroLabel": "Personal Highlight",
     "categories": [
-      "personal"
+      "personal",
+      "mechanical-design",
+      "automation-controls",
+      "fabrication-prototyping"
     ],
     "categoryLabel": "Personal",
     "keywords": [
@@ -600,7 +630,10 @@
     "heroLabel": "Featured Project",
     "categories": [
       "featured",
-      "work"
+      "work",
+      "mechanical-design",
+      "automation-controls",
+      "software-data"
     ],
     "categoryLabel": "Work",
     "keywords": [
