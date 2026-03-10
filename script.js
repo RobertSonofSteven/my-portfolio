@@ -217,7 +217,7 @@ function startSpotlightTimer() {
   spotlightTimer = window.setInterval(() => {
     const nextIndex = (spotlightIndex + 1) % spotlightProjects.length;
     showSpotlight(nextIndex);
-  }, 30000);
+  }, 10000);
 }
 
 function restartSpotlightTimer() {

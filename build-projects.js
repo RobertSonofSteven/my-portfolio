@@ -297,10 +297,6 @@ function renderProjectPage(project) {
             <span class="detail-label">Category</span>
             <span class="detail-value">${escapeHtml(project.categoryLabel)}</span>
           </div>
-          <div class="detail-row">
-            <span class="detail-label">Slug</span>
-            <span class="detail-value">${escapeHtml(project.slug)}</span>
-          </div>
         </div>
 
         <div class="sidebar-card">

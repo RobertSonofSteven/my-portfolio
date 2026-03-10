@@ -247,7 +247,7 @@ main { padding-bottom: 38px; }
 
 .spotlight-controls {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   gap: 18px;
   margin-top: 16px;
