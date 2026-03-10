@@ -217,11 +217,37 @@ function startSpotlightTimer() {
   spotlightTimer = window.setInterval(() => {
     const nextIndex = (spotlightIndex + 1) % spotlightProjects.length;
     showSpotlight(nextIndex);
-  }, 10000);
+  }, 30000);
 }
 
 function restartSpotlightTimer() {
   startSpotlightTimer();
+}
+
+function getStableRowSortValue(rowId, project, index) {
+  const seed = `${rowId}:${project.slug || project.title}:${index}`;
+  let hash = 0;
+
+  for (let i = 0; i < seed.length; i += 1) {
+    hash = (hash * 31 + seed.charCodeAt(i)) >>> 0;
+  }
+
+  return hash;
+}
+
+function sortProjectsForRow(projects, rowId) {
+  if (rowId === "featured") {
+    return [...projects].sort(sortProjects);
+  }
+
+  return [...projects]
+    .map((project, index) => ({
+      project,
+      originalIndex: index,
+      score: getStableRowSortValue(rowId, project, index)
+    }))
+    .sort((a, b) => a.score - b.score || a.originalIndex - b.originalIndex)
+    .map((item) => item.project);
 }
 
 function createCard(project) {
@@ -304,12 +330,13 @@ function renderRows(projects) {
   rowsArea.innerHTML = "";
 
   CATEGORY_CONFIG.forEach((rowConfig) => {
-    const items = projects
-      .filter((project) => {
+    const items = sortProjectsForRow(
+      projects.filter((project) => {
         if (rowConfig.id === "featured") return project.featured || project.categories.includes("featured");
         return project.categories.includes(rowConfig.id);
-      })
-      .sort(sortProjects);
+      }),
+      rowConfig.id
+    );
 
     createRow(rowConfig, items);
   });
