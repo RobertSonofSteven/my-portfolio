@@ -3,11 +3,7 @@ const CATEGORY_CONFIG = [
   { id: "work", title: "Work" },
   { id: "personal", title: "Personal" },
   { id: "mechanical-design", title: "Mechanical Design" },
-  { id: "electronics-embedded", title: "Electronics & Embedded" },
-  { id: "automation-controls", title: "Automation & Controls" },
-  { id: "fabrication-prototyping", title: "Fabrication & Prototyping" },
-  { id: "software-data", title: "Software & Data" },
-  { id: "automotive", title: "Automotive" }
+  { id: "electronics-embedded", title: "Electronics & Embedded" }
 ];
 
 let rowsArea;
@@ -94,6 +90,32 @@ function sortProjects(a, b) {
     return (a.sortOrder ?? 999) - (b.sortOrder ?? 999);
   }
   return a.title.localeCompare(b.title);
+}
+
+function getStableRowSortValue(rowId, project, index) {
+  const seed = `${rowId}:${project.slug || project.title}:${index}`;
+  let hash = 0;
+
+  for (let i = 0; i < seed.length; i += 1) {
+    hash = (hash * 31 + seed.charCodeAt(i)) >>> 0;
+  }
+
+  return hash;
+}
+
+function sortProjectsForRow(projects, rowId) {
+  if (rowId === "featured") {
+    return [...projects].sort(sortProjects);
+  }
+
+  return [...projects]
+    .map((project, index) => ({
+      project,
+      originalIndex: index,
+      score: getStableRowSortValue(rowId, project, index)
+    }))
+    .sort((a, b) => a.score - b.score || a.originalIndex - b.originalIndex)
+    .map((item) => item.project);
 }
 
 function openModal(project) {
@@ -217,37 +239,11 @@ function startSpotlightTimer() {
   spotlightTimer = window.setInterval(() => {
     const nextIndex = (spotlightIndex + 1) % spotlightProjects.length;
     showSpotlight(nextIndex);
-  }, 30000);
+  }, 10000);
 }
 
 function restartSpotlightTimer() {
   startSpotlightTimer();
-}
-
-function getStableRowSortValue(rowId, project, index) {
-  const seed = `${rowId}:${project.slug || project.title}:${index}`;
-  let hash = 0;
-
-  for (let i = 0; i < seed.length; i += 1) {
-    hash = (hash * 31 + seed.charCodeAt(i)) >>> 0;
-  }
-
-  return hash;
-}
-
-function sortProjectsForRow(projects, rowId) {
-  if (rowId === "featured") {
-    return [...projects].sort(sortProjects);
-  }
-
-  return [...projects]
-    .map((project, index) => ({
-      project,
-      originalIndex: index,
-      score: getStableRowSortValue(rowId, project, index)
-    }))
-    .sort((a, b) => a.score - b.score || a.originalIndex - b.originalIndex)
-    .map((item) => item.project);
 }
 
 function createCard(project) {

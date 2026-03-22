@@ -2,8 +2,18 @@
   "slug": "lx470-cooling-system-troubleshooting",
   "title": "LX470 Cooling System Troubleshooting",
   "heroLabel": "Car Highlight",
-  "categories": ["personal", "automotive", "mechanical-design"],
-  "keywords": ["lx470", "cooling system", "automotive", "diagnosis", "troubleshooting", "radiator"],
+  "categories": [
+    "personal",
+    "mechanical-design"
+  ],
+  "keywords": [
+    "lx470",
+    "cooling system",
+    "automotive",
+    "diagnosis",
+    "troubleshooting",
+    "radiator"
+  ],
   "tone": "car",
   "featured": false,
   "spotlight": false,
@@ -12,7 +22,9 @@
   "overview": "This can become a clean portfolio story about identifying symptoms, investigating causes, and narrowing down mechanical issues in a real vehicle system. It is useful because it shows methodical engineering thinking applied outside formal product development.",
   "thumbnail": "thumb.jpg",
   "heroImage": "hero.jpg",
-  "gallery": ["gallery-1.jpg"],
+  "gallery": [
+    "gallery-1.jpg"
+  ],
   "videos": [],
   "models": [],
   "links": {

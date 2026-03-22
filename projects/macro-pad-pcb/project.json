@@ -2,8 +2,21 @@
   "slug": "macro-pad-pcb",
   "title": "Macro Pad PCB",
   "heroLabel": "Featured Project",
-  "categories": ["featured", "personal", "mechanical-design", "electronics-embedded", "fabrication-prototyping"],
-  "keywords": ["pcb", "macro pad", "hall effect", "kicad", "electronics", "rotary knob", "input device"],
+  "categories": [
+    "featured",
+    "personal",
+    "mechanical-design",
+    "electronics-embedded"
+  ],
+  "keywords": [
+    "pcb",
+    "macro pad",
+    "hall effect",
+    "kicad",
+    "electronics",
+    "rotary knob",
+    "input device"
+  ],
   "tone": "personal",
   "featured": true,
   "spotlight": true,
@@ -12,9 +25,15 @@
   "overview": "This project is intended to showcase a mix of enclosure design, electronics integration, and user interface thinking. It can later include schematics, PCB renders, firmware notes, and prototype photos.",
   "thumbnail": "thumb.jpg",
   "heroImage": "hero.jpg",
-  "gallery": ["gallery-1.jpg"],
-  "videos": ["demo.mp4"],
-  "models": ["model.glb"],
+  "gallery": [
+    "gallery-1.jpg"
+  ],
+  "videos": [
+    "demo.mp4"
+  ],
+  "models": [
+    "model.glb"
+  ],
   "links": {
     "github": "",
     "external": ""
