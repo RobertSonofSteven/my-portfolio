@@ -8,6 +8,7 @@ const DATA_DIR = path.join(DIST, "data");
 const CAD_SOURCE_DIR = path.join(ROOT, "cad-thumbnails");
 const CAD_ROUTE = "additional-cad-work";
 const CAD_DATA_FILE = "additional-cad-work.generated.json";
+const RESUME_DIR = path.join(ROOT, "resume");
 
 const ROOT_FILES_TO_COPY = [
   "index.html",
@@ -381,6 +382,7 @@ function main() {
   }
 
   copyRecursive(PROJECTS_DIR, path.join(DIST, "projects"));
+  copyRecursive(RESUME_DIR, path.join(DIST, "resume"));
 
   const projectFolders = fs
     .readdirSync(PROJECTS_DIR, { withFileTypes: true })
