@@ -2,8 +2,18 @@
   "slug": "stewart-platform-ping-pong",
   "title": "Stewart Platform Ping Pong Concept",
   "heroLabel": "Personal Highlight",
-  "categories": ["personal", "mechanical-design", "automation-controls", "fabrication-prototyping"],
-  "keywords": ["stewart platform", "ping pong", "mechanism", "motion control", "actuation", "mechanical system"],
+  "categories": [
+    "personal",
+    "mechanical-design"
+  ],
+  "keywords": [
+    "stewart platform",
+    "ping pong",
+    "mechanism",
+    "motion control",
+    "actuation",
+    "mechanical system"
+  ],
   "tone": "personal",
   "featured": false,
   "spotlight": false,
@@ -12,9 +22,13 @@
   "overview": "This project is useful because it communicates engineering curiosity. It can highlight mechanism layout, control ideas, and the challenge of balancing responsiveness, motion range, and stability.",
   "thumbnail": "thumb.jpg",
   "heroImage": "hero.jpg",
-  "gallery": ["gallery-1.jpg"],
+  "gallery": [
+    "gallery-1.jpg"
+  ],
   "videos": [],
-  "models": ["model.glb"],
+  "models": [
+    "model.glb"
+  ],
   "links": {
     "github": "",
     "external": ""

@@ -2,8 +2,18 @@
   "slug": "smart-rep-counter",
   "title": "Smart Rep Counter",
   "heroLabel": "Fitness Highlight",
-  "categories": ["personal", "mechanical-design", "electronics-embedded", "software-data"],
-  "keywords": ["fitness", "rep counter", "embedded", "exercise tracker", "sensors", "prototype"],
+  "categories": [
+    "personal",
+    "electronics-embedded"
+  ],
+  "keywords": [
+    "fitness",
+    "rep counter",
+    "embedded",
+    "exercise tracker",
+    "sensors",
+    "prototype"
+  ],
   "tone": "fitness",
   "featured": false,
   "spotlight": false,
@@ -12,9 +22,15 @@
   "overview": "This is the kind of project that can be documented from concept sketches through prototype testing. It has strong potential as a portfolio piece because the value proposition is easy to understand immediately.",
   "thumbnail": "thumb.jpg",
   "heroImage": "hero.jpg",
-  "gallery": ["gallery-1.jpg"],
-  "videos": ["demo.mp4"],
-  "models": ["model.glb"],
+  "gallery": [
+    "gallery-1.jpg"
+  ],
+  "videos": [
+    "demo.mp4"
+  ],
+  "models": [
+    "model.glb"
+  ],
   "links": {
     "github": "",
     "external": ""

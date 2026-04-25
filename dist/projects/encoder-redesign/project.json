@@ -2,8 +2,20 @@
   "slug": "encoder-redesign",
   "title": "Magnetic Encoder Redesign",
   "heroLabel": "Featured Project",
-  "categories": ["featured", "work", "mechanical-design", "electronics-embedded", "automation-controls"],
-  "keywords": ["encoder", "hall sensor", "magnetic encoder", "packaging", "manufacturing", "redesign"],
+  "categories": [
+    "featured",
+    "work",
+    "mechanical-design",
+    "electronics-embedded"
+  ],
+  "keywords": [
+    "encoder",
+    "hall sensor",
+    "magnetic encoder",
+    "packaging",
+    "manufacturing",
+    "redesign"
+  ],
   "tone": "work",
   "featured": true,
   "spotlight": true,
@@ -12,9 +24,13 @@
   "overview": "This entry is a strong candidate for a case-study page showing the design process, packaging constraints, cost considerations, electrical coordination, and implementation outcomes.",
   "thumbnail": "thumb.jpg",
   "heroImage": "hero.jpg",
-  "gallery": ["gallery-1.jpg"],
+  "gallery": [
+    "gallery-1.jpg"
+  ],
   "videos": [],
-  "models": ["model.glb"],
+  "models": [
+    "model.glb"
+  ],
   "links": {
     "github": "",
     "external": ""

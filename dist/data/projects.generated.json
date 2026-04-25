@@ -4,10 +4,10 @@
     "title": "3D Printed Electronics Enclosure",
     "heroLabel": "3D Printing Highlight",
     "categories": [
+      "featured",
       "personal",
       "mechanical-design",
-      "electronics-embedded",
-      "fabrication-prototyping"
+      "electronics-embedded"
     ],
     "categoryLabel": "Personal",
     "keywords": [
@@ -19,7 +19,7 @@
       "product design"
     ],
     "tone": "fabrication",
-    "featured": false,
+    "featured": true,
     "spotlight": false,
     "sortOrder": 999,
     "summary": "A category-fit placeholder for enclosure design, prototype iteration, and print-for-fit work.",
@@ -58,8 +58,7 @@
     "categories": [
       "personal",
       "mechanical-design",
-      "electronics-embedded",
-      "fabrication-prototyping"
+      "electronics-embedded"
     ],
     "categoryLabel": "Personal",
     "keywords": [
@@ -111,8 +110,7 @@
     "categories": [
       "personal",
       "mechanical-design",
-      "electronics-embedded",
-      "software-data"
+      "electronics-embedded"
     ],
     "categoryLabel": "Personal",
     "keywords": [
@@ -163,11 +161,10 @@
     "title": "CRT Arcade Cabinet",
     "heroLabel": "Personal Highlight",
     "categories": [
+      "featured",
       "personal",
       "mechanical-design",
-      "electronics-embedded",
-      "fabrication-prototyping",
-      "software-data"
+      "electronics-embedded"
     ],
     "categoryLabel": "Personal",
     "keywords": [
@@ -217,7 +214,6 @@
     "heroLabel": "Car Highlight",
     "categories": [
       "personal",
-      "automotive",
       "mechanical-design"
     ],
     "categoryLabel": "Personal",
@@ -268,8 +264,7 @@
       "featured",
       "personal",
       "mechanical-design",
-      "electronics-embedded",
-      "fabrication-prototyping"
+      "electronics-embedded"
     ],
     "categoryLabel": "Personal",
     "keywords": [
@@ -324,8 +319,7 @@
       "featured",
       "work",
       "mechanical-design",
-      "electronics-embedded",
-      "automation-controls"
+      "electronics-embedded"
     ],
     "categoryLabel": "Work",
     "keywords": [
@@ -375,7 +369,6 @@
     "heroLabel": "Car Highlight",
     "categories": [
       "personal",
-      "automotive",
       "mechanical-design",
       "electronics-embedded"
     ],
@@ -426,8 +419,7 @@
     "title": "Portfolio Website",
     "heroLabel": "Personal Highlight",
     "categories": [
-      "personal",
-      "software-data"
+      "personal"
     ],
     "categoryLabel": "Personal",
     "keywords": [
@@ -439,7 +431,7 @@
       "vercel"
     ],
     "tone": "personal",
-    "featured": true,
+    "featured": false,
     "spotlight": false,
     "sortOrder": 999,
     "summary": "The site itself can become a project, documenting design choices and implementation.",
@@ -524,9 +516,7 @@
     "heroLabel": "Fitness Highlight",
     "categories": [
       "personal",
-      "mechanical-design",
-      "electronics-embedded",
-      "software-data"
+      "electronics-embedded"
     ],
     "categoryLabel": "Personal",
     "keywords": [
@@ -578,9 +568,7 @@
     "heroLabel": "Personal Highlight",
     "categories": [
       "personal",
-      "mechanical-design",
-      "automation-controls",
-      "fabrication-prototyping"
+      "mechanical-design"
     ],
     "categoryLabel": "Personal",
     "keywords": [
@@ -632,8 +620,7 @@
       "featured",
       "work",
       "mechanical-design",
-      "automation-controls",
-      "software-data"
+      "electronics-embedded"
     ],
     "categoryLabel": "Work",
     "keywords": [
@@ -651,7 +638,7 @@
     "sortOrder": 999,
     "summary": "Zone-based moisture control concept for corrugated board quality and warpage correction.",
     "description": "A control-focused concept for improving corrugated board flatness with smarter zone-based spray control.",
-    "overview": "This project explores a water spraying system for corrugated paper manufacturing using atomizing nozzles, air and water control, and future feedback-driven tuning. It is a strong example of mechanical, controls, and product-thinking overlap.",
+    "overview": "The VaporLogic is an advanced water spraying system designed to enhance the quality of corrugated paper during the manufacturing process. By utilizing atomizing nozzles, the system delivers a fine, even spray that effectively corrects warpage, ensuring superior product quality. Each nozzle is individually controlled, allowing for precise tuning of both water and air supply to meet the specific needs of each zone, with the added capability of turning off outer nozzles for smaller paper widths. Additionally, the system features self-cleaning 'clean-out' needles that prevent dripping and maintain nozzle efficiency by clearing the orifice with every closing action. Leveraging a combination of sensors, PID controllers, and AI, VaporLogic dynamically adjusts the water and air mixture in real-time, optimizing the application process to produce a consistently straight and high-quality board.",
     "highlights": [
       "corrugated",
       "spray system",
