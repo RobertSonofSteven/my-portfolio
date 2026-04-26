@@ -251,10 +251,10 @@ function createCard(project) {
   card.className = "project-card";
   card.dataset.tone = project.tone || "work";
   card.setAttribute("tabindex", "0");
+  card.setAttribute("aria-label", project.title);
   card.innerHTML = `
     <div class="project-visual"></div>
     <div class="project-overlay">
-      <h3 class="project-title">${project.title}</h3>
       <p class="project-summary">${project.summary}</p>
     </div>
   `;
