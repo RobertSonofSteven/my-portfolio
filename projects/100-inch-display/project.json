@@ -1,6 +1,6 @@
 {
-  "slug": "rugged-display-redesign",
-  "title": "Rugged Display Redesign",
+  "slug": "100\"-MegaTron-Display",
+  "title": "100\" MegaTron Display",
   "heroLabel": "Work Highlight",
   "categories": [
     "work",
@@ -18,9 +18,9 @@
   "tone": "work",
   "featured": false,
   "spotlight": false,
-  "summary": "A work-style placeholder for a product redesign focused on packaging, usability, and implementation.",
-  "description": "A professional-looking case-study slot for a future work project writeup.",
-  "overview": "This placeholder keeps the work row full while giving you a spot for another strong product design case study. Later it can be replaced with a real project from your job or consulting work.",
+  "summary": "Designed a modular 100\" industrial display with improved serviceability, assembly speed, and sheet-metal construction.",
+  "description": "Redesigned a 70\" production display into a rugged 100\" overhead display using sheet-metal panels attached to an internal skeleton. The modular design improves assembly and allows technicians to access or remove panels for service without lowering or fully disassembling the unit.",
+  "overview": "This project focused on redesigning an existing industrial production display into a larger, more serviceable, and more manufacturable 100\" system. The new design uses sheet-metal panels mounted to an internal structural frame, allowing the enclosure to remain strong while still giving technicians practical access to internal components. \n\nA major goal was to simplify assembly and maintenance. Instead of requiring the display to be lowered or heavily disassembled for service, the modular panel system allows quick access through smaller service doors or full removable panels when needed. This makes the display more practical for plant environments where downtime and difficult access can create major maintenance issues. \n\nMy role included developing the complete product design, creating the 3D CAD models, preparing the design for sheet-metal manufacturing, and coordinating with manufacturers to support fabrication. The final design provides a significant upgrade over the previous 70\" display by delivering a larger 100\" screen, improved ruggedness, faster assembly, and easier long-term serviceability.",
   "thumbnail": "thumb.jpg",
   "heroImage": "hero.jpg",
   "gallery": [
