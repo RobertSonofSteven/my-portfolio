@@ -20,8 +20,8 @@
   "featured": true,
   "spotlight": true,
   "summary": "Redesign work involving magnetic encoder packaging, manufacturability, and system integration.",
-  "description": "An engineering-focused redesign project that can highlight practical constraints and real-world iteration.",
-  "overview": "This entry is a strong candidate for a case-study page showing the design process, packaging constraints, cost considerations, electrical coordination, and implementation outcomes.",
+  "description": "Redesigned a legacy rotary encoder into a compact, programmable Hall effect encoder assembly that improves reliability, fits tighter machine spaces, and reduces cost by approximately 95%.",
+  "overview": "Redesigned a legacy rotary encoder assembly using a much smaller Hall effect encoder mounted inside a custom compact housing. The new design uses a smaller contact wheel and low-profile connector, allowing the assembly to fit into tighter machine spaces while making cable routing easier during installation and service. \n\nCompared to the original encoder assemblies, the redesign improves reliability, reduces overall size, and cuts cost by approximately 95%. The programmable encoder also allows the pulse count to be configured based on the application and installation location, making one standardized design capable of replacing multiple existing encoder types.",
   "thumbnail": "thumb.jpg",
   "heroImage": "hero.jpg",
   "gallery": [
