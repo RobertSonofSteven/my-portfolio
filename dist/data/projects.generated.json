@@ -613,8 +613,8 @@
     "pageUrl": "/projects/stewart-platform-ping-pong/"
   },
   {
-    "slug": "vaporlogicai",
-    "title": "VaporLogicAI",
+    "slug": "vaporlogic",
+    "title": "VaporLogic",
     "heroLabel": "Featured Project",
     "categories": [
       "featured",
@@ -650,22 +650,22 @@
       "Engineering",
       "Design"
     ],
-    "thumbnail": "/projects/vaporlogicai/thumb.jpg",
-    "heroImage": "/projects/vaporlogicai/hero.jpg",
+    "thumbnail": "/projects/vaporlogic/thumb.jpg",
+    "heroImage": "/projects/vaporlogic/hero.jpg",
     "gallery": [
-      "/projects/vaporlogicai/gallery-1.jpg",
-      "/projects/vaporlogicai/gallery-2.jpg"
+      "/projects/vaporlogic/gallery-1.jpg",
+      "/projects/vaporlogic/gallery-2.jpg"
     ],
     "videos": [
-      "/projects/vaporlogicai/demo.mp4"
+      "/projects/vaporlogic/demo.mp4"
     ],
     "models": [
-      "/projects/vaporlogicai/model.glb"
+      "/projects/vaporlogic/model.glb"
     ],
     "links": {
       "github": "",
       "external": ""
     },
-    "pageUrl": "/projects/vaporlogicai/"
+    "pageUrl": "/projects/vaporlogic/"
   }
 ]
