@@ -32,9 +32,7 @@
   "videos": [
     "demo.mp4"
   ],
-  "models": [
-    "model.glb"
-  ],
+  "models": [],
   "links": {
     "github": "",
     "external": ""

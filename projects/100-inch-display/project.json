@@ -1,0 +1,46 @@
+{
+  "slug": "rugged-display-redesign",
+  "title": "Rugged Display Redesign",
+  "heroLabel": "Work Highlight",
+  "categories": [
+    "work",
+    "mechanical-design",
+    "electronics-embedded"
+  ],
+  "keywords": [
+    "display",
+    "redesign",
+    "packaging",
+    "product design",
+    "manufacturing",
+    "industrial"
+  ],
+  "tone": "work",
+  "featured": false,
+  "spotlight": false,
+  "summary": "A work-style placeholder for a product redesign focused on packaging, usability, and implementation.",
+  "description": "A professional-looking case-study slot for a future work project writeup.",
+  "overview": "This placeholder keeps the work row full while giving you a spot for another strong product design case study. Later it can be replaced with a real project from your job or consulting work.",
+  "thumbnail": "thumb.jpg",
+  "heroImage": "hero.jpg",
+  "gallery": [
+    "gallery-1.jpg",
+    "gallery-2.jpg",
+    "gallery-3.jpg",
+    "gallery-4.jpg",
+    "gallery-5.jpg",
+    "gallery-6.jpg",
+    "gallery-7.jpg",
+    "gallery-8.jpg"
+  ],
+  "videos": [
+    "demo.mp4"
+  ],
+  "models": [
+    "model.glb"
+  ],
+  "links": {
+    "github": "",
+    "external": ""
+  }
+}
