@@ -1,0 +1,43 @@
+{
+  "slug": "rear-console-12v-usb-upgrade",
+  "title": "Rear Console 12V/USB Upgrade",
+  "heroLabel": "Personal Project",
+  "categories": [
+    "personal",
+    "mechanical-design"
+  ],
+  "keywords": [
+    "automotive",
+    "center console",
+    "12v power",
+    "usb charging",
+    "retrofit",
+    "3d printing",
+    "bezel",
+    "interior upgrade"
+  ],
+  "tone": "personal",
+  "featured": false,
+  "spotlight": false,
+  "summary": "Custom rear-console power upgrade with integrated 12V and USB charging ports.",
+  "description": "Designed a custom rear center-console upgrade to add 12V and USB power access for second-row passengers.",
+  "overview": "This project adds rear passenger power access to the center console by replacing the blank rear console panel with a custom-designed bezel for a 12V socket and USB charging module. The design is intended to fit the existing interior layout while giving second-row passengers convenient charging access for phones, tablets, and accessories.\n\nThe bezel was designed around the available console space and port dimensions, with attention to fit, alignment, usability, and appearance. The final assembly will integrate the two power ports into the custom panel for a clean retrofit that looks intentional rather than improvised.",
+  "thumbnail": "thumb.jpg",
+  "heroImage": "hero.jpg",
+  "gallery": [
+    "gallery-1.jpg",
+    "gallery-2.jpg",
+    "gallery-3.jpg",
+    "gallery-4.jpg",
+    "gallery-5.jpg",
+    "gallery-6.jpg"
+  ],
+  "videos": [],
+  "models": [
+    "model.glb"
+  ],
+  "links": {
+    "github": "",
+    "external": ""
+  }
+}
