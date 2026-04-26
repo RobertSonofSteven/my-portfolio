@@ -69,9 +69,41 @@ function ensureArray(value) {
   return Array.isArray(value) ? value.filter(Boolean) : [];
 }
 
-function toPublicProjectPath(slug, fileName) {
+function resolveProjectFileName(slug, fileName) {
   if (!fileName) return "";
-  return `/projects/${slug}/${fileName}`;
+
+  const projectDir = path.join(PROJECTS_DIR, slug);
+
+  // Supports nested paths too, like "gallery/gallery-1.jpg"
+  const requestedParts = fileName.split(/[\\/]/);
+  let currentDir = projectDir;
+
+  for (let i = 0; i < requestedParts.length; i += 1) {
+    const requestedPart = requestedParts[i];
+
+    if (!fs.existsSync(currentDir)) return fileName;
+
+    const actualPart = fs
+      .readdirSync(currentDir)
+      .find((entry) => entry.toLowerCase() === requestedPart.toLowerCase());
+
+    if (!actualPart) return fileName;
+
+    requestedParts[i] = actualPart;
+
+    if (i === requestedParts.length - 1) {
+      return requestedParts.join("/");
+    }
+
+    currentDir = path.join(currentDir, actualPart);
+  }
+
+  return fileName;
+}
+
+function toResolvedPublicProjectPath(slug, fileName) {
+  if (!fileName) return "";
+  return `/projects/${slug}/${resolveProjectFileName(slug, fileName)}`;
 }
 
 function inferTone(categories, fallbackTone) {
@@ -114,12 +146,12 @@ function normalizeProject(raw, folderName) {
     overview: raw.overview || raw.description || "",
     highlights: highlights.length ? highlights : keywords.slice(0, 4),
     meta,
-    thumbnail: toPublicProjectPath(slug, raw.thumbnail || "thumb.jpg"),
-	heroImage: toPublicProjectPath(slug, raw.heroImage || "hero.jpg"),
-	bannerImage: raw.bannerImage ? toPublicProjectPath(slug, raw.bannerImage) : "",
-	gallery: ensureArray(raw.gallery).map((file) => toPublicProjectPath(slug, file)),
-    videos: ensureArray(raw.videos).map((file) => toPublicProjectPath(slug, file)),
-    models: ensureArray(raw.models).map((file) => toPublicProjectPath(slug, file)),
+    thumbnail: toResolvedPublicProjectPath(slug, raw.thumbnail || "thumb.jpg"),
+	heroImage: toResolvedPublicProjectPath(slug, raw.heroImage || "hero.jpg"),
+	bannerImage: raw.bannerImage ? toResolvedPublicProjectPath(slug, raw.bannerImage) : "",
+	gallery: ensureArray(raw.gallery).map((file) => toResolvedPublicProjectPath(slug, file)),
+	videos: ensureArray(raw.videos).map((file) => toResolvedPublicProjectPath(slug, file)),
+	models: ensureArray(raw.models).map((file) => toResolvedPublicProjectPath(slug, file)),
     links: raw.links || {},
     pageUrl: `/projects/${slug}/`
   };
