@@ -143,12 +143,14 @@ function openModal(project) {
     modalProjectLink.href = project.pageUrl;
   }
 
+const modalImage = project.bannerImage || project.heroImage || project.thumbnail;
+
   modalMedia.style.background = `
-    linear-gradient(90deg, rgba(0,0,0,0.18), rgba(0,0,0,0.3)),
-    radial-gradient(circle at 18% 18%, ${getToneGlow(project.tone)}, transparent 22%),
-    radial-gradient(circle at 82% 72%, rgba(255,255,255,0.07), transparent 20%),
-    url("${project.heroImage}") center/cover no-repeat
-  `;
+  linear-gradient(90deg, rgba(0,0,0,0.18), rgba(0,0,0,0.3)),
+  radial-gradient(circle at 18% 18%, ${getToneGlow(project.tone)}, transparent 22%),
+  radial-gradient(circle at 82% 72%, rgba(255,255,255,0.07), transparent 20%),
+  url("${modalImage}") center/cover no-repeat
+`;
 
   modalBackdrop.classList.add("active");
   modalBackdrop.setAttribute("aria-hidden", "false");
