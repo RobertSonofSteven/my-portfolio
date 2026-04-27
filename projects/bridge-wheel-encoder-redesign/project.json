@@ -1,0 +1,44 @@
+{
+  "slug": "bridge-wheel-encoder-redesign",
+  "title": "Bridge Wheel Encoder Redesign",
+  "heroLabel": "Work Project",
+  "categories": [
+    "work",
+    "mechanical-design",
+    "electronics-embedded",
+    "3d-printing"
+  ],
+  "keywords": [
+    "corrugated",
+    "bridge wheel",
+    "encoder",
+    "hall effect sensor",
+    "3d printing",
+    "cost reduction",
+    "in-house manufacturing",
+    "sensor redesign"
+  ],
+  "tone": "work",
+  "featured": false,
+  "spotlight": false,
+  "summary": "Redesigned a bridge wheel encoder using 3D printed parts, off-the-shelf hardware, and a programmable Hall effect sensor.",
+  "description": "Redesigned a corrugated bridge wheel encoder to replace an expensive cast housing and linear magnetic sensor assembly with a mostly 3D printed design using off-the-shelf bearings, a shaft, and a programmable rotational Hall effect sensor.",
+  "overview": "This project focused on redesigning a bridge wheel encoder used on a corrugated production line to monitor the amount of paper accumulating on the bridge. As the glued corrugated web travels up to the bridge, it forms a festooned loop. Bridge wheels positioned at the minimum and maximum limits help indicate when the line needs to speed up to reduce excess festooning or slow down to avoid a break.\n\nThe original assembly used an expensive cast metal housing and a costly linear magnetic sensor paired with a 10-point disk, where each point was detected as a pulse. The redesigned version replaces that approach with a mostly 3D printed housing and wheel assembly supported by an inexpensive off-the-shelf bearing and shaft. This maintains the strength needed for the wheel assembly, including accidental step loads, while greatly simplifying manufacturing.\n\nFor sensing, the redesign uses a compact programmable rotational Hall effect sensor configured to match the existing 10-pulse requirement. This allows the new design to preserve compatibility with the current system while reducing cost, simplifying assembly, and bringing nearly all manufacturing in-house. The result is a more affordable and serviceable bridge wheel encoder with a cost savings of over 70%.",
+  "thumbnail": "thumb.jpg",
+  "heroImage": "hero.jpg",
+  "bannerImage": "banner.jpg",
+  "gallery": [
+    "gallery-1.jpg",
+    "gallery-2.jpg",
+    "gallery-3.jpg",
+    "gallery-4.jpg"
+  ],
+  "videos": [],
+  "models": [
+    "model.glb"
+  ],
+  "links": {
+    "github": "",
+    "external": ""
+  }
+}
