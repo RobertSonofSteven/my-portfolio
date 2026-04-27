@@ -1,0 +1,40 @@
+{
+  "slug": "verification-pressure-pump",
+  "title": "Verification Pressure Pump",
+  "heroLabel": "Work Project",
+  "categories": [
+    "work",
+    "mechanical-design",
+    "electronics-embedded",
+    "automation"
+  ],
+  "keywords": [
+    "corrugated",
+    "verification spray",
+    "pressure control",
+    "diaphragm pump",
+    "automation",
+    "ir sensors",
+    "water spray",
+    "prototype"
+  ],
+  "tone": "work",
+  "featured": false,
+  "spotlight": false,
+  "summary": "Automatic pressure-boosting pump system for reliable verification spray detection on corrugated production lines.",
+  "description": "Designed a pressure-controlled pump system that automatically boosts water pressure for verification sprays when plant pressure drops below the required level.",
+  "overview": "This project was developed to improve the reliability of a verification process used on corrugated production lines. During verification, water is sprayed onto the paper and IR heat sensors detect the resulting cool spots to confirm production data. In some plants, inconsistent or low water pressure can prevent the spray from reaching the board, causing missed verification events.\n\nThe solution uses a compact diaphragm pump integrated into a control enclosure with tubing, fittings, wiring, and pressure-based switching. The pump automatically turns on only when water pressure drops below a set threshold and remains off when plant pressure is already sufficient. This keeps the system ready for reliable verification sprays while reducing unnecessary power usage and limiting pump wear from constant operation.\n\nThe working prototype demonstrates the full system concept, including the pump, internal mounting plate, tubing layout, electrical connections, and enclosure integration. The design focuses on practical field installation, serviceability, and dependable operation in plant environments where water pressure can vary.",
+  "thumbnail": "thumb.jpg",
+  "heroImage": "hero.jpg",
+  "bannerImage": "banner.jpg",
+  "gallery": [],
+  "videos": [],
+  "models": [
+    "model-1.jpg",
+    "model-2.jpg"
+  ],
+  "links": {
+    "github": "",
+    "external": ""
+  }
+}

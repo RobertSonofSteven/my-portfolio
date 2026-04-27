@@ -1,0 +1,50 @@
+{
+  "slug": "3d-printed-regulator-cap",
+  "title": "3D Printed Regulator Cap",
+  "heroLabel": "Featured Project",
+  "categories": [
+    "work",
+    "mechanical-design",
+    "manufacturing",
+    "3d-printing"
+  ],
+  "keywords": [
+    "regulator cap",
+    "3d printed",
+    "pneumatic control",
+    "starch glue",
+    "corrugated",
+    "air pressure",
+    "diaphragm",
+    "needle valve",
+    "in-house manufacturing",
+    "cost reduction"
+  ],
+  "tone": "work",
+  "featured": false,
+  "spotlight": false,
+  "summary": "3D printed pneumatic regulator cap replacement for lower-cost, in-house glue control.",
+  "description": "A redesigned regulator cap that replaces expensive custom Delrin parts with a durable 3D printed alternative. The cap is air- and water-tight, pressure-tested well beyond operating conditions, and enables reliable pneumatic control of starch glue flow.",
+  "overview": "This project focused on redesigning a custom regulator cap used in the corrugated paper gluing process. The original caps were manufactured from Delrin and were relatively expensive, especially when ordered in larger batches. Their function is to allow compressed air into the cap, expanding an internal diaphragm that opens a needle valve and pneumatically controls starch glue flow. By replacing the original machined part with a 3D printed design, I created a much more cost-effective solution that can also be produced in-house on demand. The new cap has been tested to over 120 psi, despite the application never exceeding 45 psi, and has proven to be both water- and air-tight, strong, and reliable in use. This redesign reduces cost, shortens lead time, and improves flexibility by eliminating the need for large outsourced manufacturing orders.",
+  "thumbnail": "thumb.jpg",
+  "heroImage": "hero.jpg",
+  "bannerImage": "banner.jpg",
+  "gallery": [
+    "gallery-1.jpg",
+    "gallery-2.jpg",
+    "gallery-3.jpg",
+    "gallery-4.jpg",
+    "gallery-5.jpg",
+    "gallery-6.jpg",
+    "gallery-7.jpg",
+    "gallery-8.jpg"
+  ],
+  "videos": [],
+  "models": [
+    "model.glb"
+  ],
+  "links": {
+    "github": "",
+    "external": ""
+  }
+}

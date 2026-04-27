@@ -1,0 +1,42 @@
+{
+  "slug": "legacy-encoder-housing-retrofit",
+  "title": "Legacy Encoder Housing Retrofit",
+  "heroLabel": "Featured Project",
+  "categories": [
+    "work",
+    "mechanical-design",
+    "electronics-embedded",
+    "manufacturing"
+  ],
+  "keywords": [
+    "encoder",
+    "hall effect sensor",
+    "retrofit",
+    "backwards compatibility",
+    "cost reduction",
+    "industrial automation",
+    "sensor redesign",
+    "legacy systems"
+  ],
+  "tone": "work",
+  "featured": true,
+  "spotlight": true,
+  "summary": "Retrofitted legacy encoder housings with programmable Hall-effect sensors for major cost savings and full backwards compatibility.",
+  "description": "A retrofit solution that updates legacy encoder housings with a smaller programmable Hall-effect sensor while preserving compatibility with existing systems. The redesign improves reliability and reduces raw material cost from $153 to about $19 per unit.",
+  "overview": "This project focused on retrofitting older encoder housings with a newer rotational Hall-effect sensor to maintain full backwards compatibility with existing systems while taking advantage of a much cheaper and more reliable sensing solution. By adapting the legacy housing to accept the updated sensor design, the project allowed older equipment to remain in service without sacrificing performance or requiring a full system redesign. The retrofit reduced raw material cost from $153 per unit to only $19 per unit, representing nearly 90% savings. Over the past year alone, this translated to roughly $33,000 in savings. While the long-term goal is to phase out the older housings in favor of the smaller redesigned encoder, this retrofit created an effective bridge solution that delivers immediate cost reduction, improved reliability, and continued support for installed legacy systems.",
+  "thumbnail": "thumb.jpg",
+  "heroImage": "hero.jpg",
+  "bannerImage": "banner.jpg",
+  "gallery": [
+    "gallery-1.jpg",
+    "gallery-2.jpg",
+    "gallery-3.jpg",
+    "gallery-4.jpg"
+  ],
+  "videos": [],
+  "models": [],
+  "links": {
+    "github": "",
+    "external": ""
+  }
+}
