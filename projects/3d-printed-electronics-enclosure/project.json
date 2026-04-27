@@ -1,35 +1,46 @@
 {
-  "slug": "3d-printed-electronics-enclosure",
-  "title": "3D Printed Electronics Enclosure",
-  "heroLabel": "3D Printing Highlight",
+  "slug": "3d-printed-electronics-enclosures",
+  "title": "3D Printed Electronics Enclosures",
+  "heroLabel": "Personal Project",
   "categories": [
-    "featured",
     "personal",
     "mechanical-design",
-    "electronics-embedded"
+    "electronics-embedded",
+    "3d-printing"
   ],
   "keywords": [
     "3d printing",
     "electronics enclosure",
-    "prototype",
-    "enclosure",
-    "print for fit",
+    "pcb mounting",
+    "snap fit",
+    "screw mounting",
+    "prototyping",
+    "custom housing",
     "product design"
   ],
-  "tone": "fabrication",
-  "featured": true,
+  "tone": "personal",
+  "featured": false,
   "spotlight": false,
-  "summary": "A category-fit placeholder for enclosure design, prototype iteration, and print-for-fit work.",
-  "description": "A flexible fabrication project slot for a future printed enclosure case study.",
-  "overview": "This is a useful placeholder because it fits naturally with your printer, electronics, and product design interests. It can later become a real project with design iterations, print settings, and fit testing photos.",
+  "summary": "Custom 3D printed electronics enclosures designed around board fitment, mounting, and access needs.",
+  "description": "Designed custom 3D printed electronics enclosures with project-specific mounting, closure, and access features for prototyping and small-scale final assemblies.",
+  "overview": "This project showcases a set of custom 3D printed electronics enclosures designed around the specific needs of the boards and components inside. Each enclosure was developed with attention to board fitment, connector access, wire routing, internal retention, assembly method, and serviceability.\n\nThe designs demonstrate multiple enclosure strategies, including screw-fastened housings, snap-fit covers, internal PCB standoffs, retaining clips, and custom board retention features. Depending on the project requirements, boards can be mounted with screws, retained with snaps, or secured using other project-specific features.\n\nWhile these enclosures are primarily useful for prototyping and development, the same design approach can also be used for polished final versions when 3D printing is appropriate. The project highlights my ability to design functional mechanical housings around electronics while balancing manufacturability, usability, and assembly.",
   "thumbnail": "thumb.jpg",
   "heroImage": "hero.jpg",
+  "bannerImage": "banner.jpg",
   "gallery": [
-    "gallery-1.jpg"
+    "gallery-1.jpg",
+    "gallery-2.jpg",
+    "gallery-3.jpg",
+    "gallery-4.jpg",
+    "gallery-5.jpg",
+    "gallery-6.jpg"
   ],
   "videos": [],
   "models": [
-    "model.glb"
+    "model-1.glb",
+    "model-2.glb",
+    "model-3.glb",
+    "model-4.glb"
   ],
   "links": {
     "github": "",
