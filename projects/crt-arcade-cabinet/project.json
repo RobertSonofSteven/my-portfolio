@@ -21,7 +21,7 @@
     "prototype"
   ],
   "tone": "personal",
-  "featured": false,
+  "featured": true,
   "spotlight": false,
   "summary": "In-progress desktop CRT arcade cabinet built around Raspberry Pi emulation and custom arcade controls.",
   "description": "A nostalgia-driven retro arcade project using a Raspberry Pi, CRT display, and custom arcade controls, with the final goal of a compact CNC-cut desktop cabinet inspired by classic arcade machines.",

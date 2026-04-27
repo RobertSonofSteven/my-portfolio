@@ -16,7 +16,7 @@
     "industrial"
   ],
   "tone": "work",
-  "featured": false,
+  "featured": true,
   "spotlight": true,
   "summary": "Designed a modular 100\" industrial display with improved serviceability, assembly speed, and sheet-metal construction.",
   "description": "Redesigned a 70\" production display into a rugged 100\" overhead display using sheet-metal panels attached to an internal skeleton. The modular design improves assembly and allows technicians to access or remove panels for service without lowering or fully disassembling the unit.",
