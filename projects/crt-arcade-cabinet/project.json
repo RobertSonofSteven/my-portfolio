@@ -1,35 +1,41 @@
 {
   "slug": "crt-arcade-cabinet",
   "title": "CRT Arcade Cabinet",
-  "heroLabel": "Personal Highlight",
+  "heroLabel": "Personal Project",
   "categories": [
-    "featured",
     "personal",
     "mechanical-design",
-    "electronics-embedded"
+    "electronics-embedded",
+    "3d-printing"
   ],
   "keywords": [
-    "arcade",
     "crt",
+    "arcade cabinet",
     "raspberry pi",
     "retro gaming",
-    "controls",
-    "cabinet"
+    "emulation",
+    "arcade controls",
+    "3d printing",
+    "cnc wood",
+    "desktop cabinet",
+    "prototype"
   ],
   "tone": "personal",
-  "featured": true,
+  "featured": false,
   "spotlight": false,
-  "summary": "A retro gaming build combining Raspberry Pi setup, controls, and CRT presentation.",
-  "description": "A hands-on project that blends electronics, fabrication, interface setup, and nostalgic product design.",
-  "overview": "This project has great visual appeal and gives your portfolio personality. It can show troubleshooting, mechanical mounting, software setup, user-experience thinking, and finish details.",
+  "summary": "In-progress desktop CRT arcade cabinet built around Raspberry Pi emulation and custom arcade controls.",
+  "description": "A nostalgia-driven retro arcade project using a Raspberry Pi, CRT display, and custom arcade controls, with the final goal of a compact CNC-cut desktop cabinet inspired by classic arcade machines.",
+  "overview": "This project is an in-progress desktop arcade cabinet built around a 13-inch CRT television and a Raspberry Pi running emulation software for older game systems. The current setup is usable and focuses mainly on configuring the Raspberry Pi, display output, ROM libraries, and controller inputs for retro arcade and console games.\n\nThe system is primarily used for arcade games, but it is capable of running a range of older systems, from classic arcade and Atari titles up through PlayStation 2, with some GameCube and Wii compatibility depending on performance. To support a more authentic arcade feel, I added arcade buttons and analog sticks, which are currently installed in basic 3D printed control templates while the final enclosure is still being developed.\n\nThe long-term plan is to design a compact desktop cabinet that visually resembles a classic arcade machine, scaled around the 13-inch CRT. Once the design is finalized, the cabinet will be CNC cut from wood to create a stronger and more professional final build. This project combines electronics setup, retro hardware integration, 3D printed prototyping, controller layout design, and future cabinet fabrication into one nostalgia-focused personal build.",
   "thumbnail": "thumb.jpg",
   "heroImage": "hero.jpg",
+  "bannerImage": "banner.jpg",
   "gallery": [
-    "gallery-1.jpg"
+    "gallery-1.jpg",
+    "gallery-2.jpg",
+    "gallery-3.jpg",
+    "gallery-4.jpg"
   ],
-  "videos": [
-    "demo.mp4"
-  ],
+  "videos": [],
   "models": [],
   "links": {
     "github": "",
