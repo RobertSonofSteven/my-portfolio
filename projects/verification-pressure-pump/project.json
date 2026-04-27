@@ -27,12 +27,12 @@
   "thumbnail": "thumb.jpg",
   "heroImage": "hero.jpg",
   "bannerImage": "banner.jpg",
-  "gallery": [],
-  "videos": [],
-  "models": [
-    "model-1.jpg",
-    "model-2.jpg"
+  "gallery": [
+    "gallery-1.jpg",
+    "gallery-2.jpg"
   ],
+  "videos": [],
+  "models": [],
   "links": {
     "github": "",
     "external": ""
